@@ -21,7 +21,7 @@ repos:
   rev: 1.8.0
   hooks:
     - id: bandit
-      exclude: tests/.*
+      exclude: "tests/.*"
 - repo: https://github.com/astral-sh/uv-pre-commit
   rev: 0.5.8
   hooks:

@@ -1,0 +1,1456 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Accept-Language:
+      - pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/109.0
+      host:
+      - dadosabertos.capes.gov.br
+    method: GET
+    uri: https://dadosabertos.capes.gov.br/api/3/action/package_search?q=catalogo-de-teses-e-dissertacoes&rows=10
+  response:
+    body:
+      string: '{"help": "https://dadosabertos.capes.gov.br/api/3/action/help_show?name=package_search",
+        "success": true, "result": {"count": 83, "facets": {}, "results": [{"author":
+        "", "author_email": "", "creator_user_id": "7fbacb25-45fb-4fbe-b0af-d096ae71912f",
+        "id": "dbb9b83e-7779-4b99-89d2-1ff8099f36f6", "isopen": true, "license_id":
+        "cc-by", "license_title": "Creative Commons Atribui\u00e7\u00e3o", "license_url":
+        "http://www.opendefinition.org/licenses/cc-by", "maintainer": "DAV", "maintainer_email":
+        "OUVIDORIA@CAPES.GOV.BR", "metadata_created": "2022-12-22T00:31:24.589075",
+        "metadata_modified": "2024-12-04T13:41:04.179561", "name": "2021-a-2024-catalogo-de-teses-e-dissertacoes-brasil",
+        "notes": "O Cat\u00e1logo de Teses e Disserta\u00e7\u00f5es da Capes tem como
+        objetivo facilitar o acesso a informa\u00e7\u00f5es sobre teses e disserta\u00e7\u00f5es
+        defendidas junto a programas de p\u00f3s-gradua\u00e7\u00e3o do pa\u00eds.
+        Atualmente os dados nele apresentados s\u00e3o oriundos da Plataforma Sucupira.
+        \r\n\r\nNesta publica\u00e7\u00e3o, o per\u00edodo de abrang\u00eancia s\u00e3o
+        os dados coletados do ano base de 2021 a 2024. At\u00e9 o momento, os dados
+        disponibilizados cont\u00eam informa\u00e7\u00f5es sobre as Teses e Disserta\u00e7\u00f5es
+        da P\u00f3s-Gradua\u00e7\u00e3o dos anos base de  2021 e 2022.\r\n\r\nVers\u00f5es
+        posteriores s\u00e3o esperadas de forma a complementar com os anos subsequentes,
+        sendo que ao final contemplar\u00e1 os dados dos anos de 2021 a 2024.", "num_resources":
+        6, "num_tags": 4, "organization": {"id": "a994a478-5aaf-4e09-8372-134a0af7c0e8",
+        "name": "diretoria-de-avaliacao", "title": "Avalia\u00e7\u00e3o da P\u00f3s-Gradua\u00e7\u00e3o
+        Stricto Sensu", "type": "organization", "description": "A avalia\u00e7\u00e3o
+        da p\u00f3s-gradua\u00e7\u00e3o stricto senso tem como objetivo a certifica\u00e7\u00e3o
+        da qualidade da p\u00f3s-gradua\u00e7\u00e3o brasileira bem como a identifica\u00e7\u00e3o
+        de assimetrias regionais e de \u00e1reas estrat\u00e9gicas do conhecimento.
+        Ela \u00e9 orientada pela Diretoria de Avalia\u00e7\u00e3o/CAPES e realizada
+        com a participa\u00e7\u00e3o da comunidade acad\u00eamico-cient\u00edfica
+        por meio de consultores ad hoc. Tem como pilares a forma\u00e7\u00e3o p\u00f3s-graduada
+        de docentes para todos os n\u00edveis de ensino e de recursos humanos qualificados
+        para o mercado, bem como o fortalecimento das bases cient\u00edfica, tecnol\u00f3gica
+        e de inova\u00e7\u00e3o.", "image_url": "", "created": "2017-07-19T15:04:15.073147",
+        "is_organization": true, "approval_status": "approved", "state": "active"},
+        "owner_org": "a994a478-5aaf-4e09-8372-134a0af7c0e8", "private": false, "state":
+        "active", "title": "[2021 a 2024] Cat\u00e1logo de Teses e Disserta\u00e7\u00f5es
+        - Brasil", "type": "dataset", "url": "", "version": "1.0", "extras": [{"key":
+        "atualizacaoVersao", "value": "true"}, {"key": "coberturaEspacial", "value":
+        "FEDERAL"}, {"key": "coberturaTemporalFim", "value": "31/12/2024"}, {"key":
+        "coberturaTemporalInicio", "value": "01/01/2021"}, {"key": "granularidadeEspacial",
+        "value": "ESTADUAL"}, {"key": "periodicidade", "value": "ANUAL"}], "groups":
+        [{"description": "Os conjuntos de dados deste grupo cont\u00eam informa\u00e7\u00f5es
+        sobre as teses e disserta\u00e7\u00f5es da p\u00f3s-gradua\u00e7\u00e3o consolidados
+        a partir do Coleta Capes, os nomes dos autores, a data de defesa, a localiza\u00e7\u00e3o
+        da IES a qual o autor est\u00e1 vinculado, a \u00e1rea de conhecimento da
+        tese ou disserta\u00e7\u00e3o.", "display_name": "Cat\u00e1logo de Teses e
+        Disserta\u00e7\u00f5es - Brasil", "id": "6ea40c37-0f11-4c4d-a18c-cf1b9af8d0c2",
+        "image_display_url": "", "name": "catalogo-de-teses-e-dissertacoes-brasil",
+        "title": "Cat\u00e1logo de Teses e Disserta\u00e7\u00f5es - Brasil"}, {"description":
+        "Educa\u00e7\u00e3o.", "display_name": "Educa\u00e7\u00e3o", "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd",
+        "image_display_url": "", "name": "educacao", "title": "Educa\u00e7\u00e3o"},
+        {"description": "Pesquisa e Desenvolvimento.", "display_name": "Pesquisa e
+        Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695", "image_display_url":
+        "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa e Desenvolvimento"}],
+        "resources": [{"cache_last_updated": null, "cache_url": null, "created": "2022-12-22T02:07:37.715919",
+        "datastore_active": true, "description": "Ano 2021", "format": "CSV", "hash":
+        "", "id": "068003e4-196c-41f4-8c35-1f7c94b4e55c", "last_modified": "2023-11-22T18:02:56.865045",
+        "metadata_modified": "2023-11-22T18:02:57.173560", "mimetype": "text/csv",
+        "mimetype_inner": null, "name": "BR-CAPES-BTD-2021-2023-10-31", "package_id":
+        "dbb9b83e-7779-4b99-89d2-1ff8099f36f6", "position": 0, "resource_type": null,
+        "size": 451493734, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/dbb9b83e-7779-4b99-89d2-1ff8099f36f6/resource/068003e4-196c-41f4-8c35-1f7c94b4e55c/download/br-capes-btd-2021-2023-10-31.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-22T23:31:53.716313", "datastore_active": true, "description": "Ano
+        2021", "format": "XLSX", "hash": "", "id": "1dfdb53a-543d-4834-97e2-27df8cb8d83a",
+        "last_modified": "2023-11-22T18:05:43.049278", "metadata_modified": "2023-11-22T18:05:43.094831",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "BR-CAPES-BTD-2021-2023-10-31", "package_id":
+        "dbb9b83e-7779-4b99-89d2-1ff8099f36f6", "position": 1, "resource_type": null,
+        "size": 151249064, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/dbb9b83e-7779-4b99-89d2-1ff8099f36f6/resource/1dfdb53a-543d-4834-97e2-27df8cb8d83a/download/br-capes-btd-2021-2023-10-31.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-11-22T18:09:56.793069", "datastore_active": true, "description": "Ano
+        2022", "format": "CSV", "hash": "", "id": "78f73608-6f5e-463c-ba79-0bff4f8a578d",
+        "last_modified": "2024-02-01T12:54:33.748542", "metadata_modified": "2024-02-01T12:54:33.786604",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "BR-CAPES-BTD-2022-2023-10-31",
+        "package_id": "dbb9b83e-7779-4b99-89d2-1ff8099f36f6", "position": 2, "resource_type":
+        null, "size": 453138023, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/dbb9b83e-7779-4b99-89d2-1ff8099f36f6/resource/78f73608-6f5e-463c-ba79-0bff4f8a578d/download/br-capes-btd-2022-2023-10-31.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-11-22T18:12:09.086961", "datastore_active": true, "description": "Ano
+        2022", "format": "XLSX", "hash": "", "id": "5aabb7a7-33ab-47b2-8b24-3e6765102f02",
+        "last_modified": "2024-02-01T12:56:56.659969", "metadata_modified": "2024-02-01T12:56:56.700300",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "BR-CAPES-BTD-2022-2023-10-31", "package_id":
+        "dbb9b83e-7779-4b99-89d2-1ff8099f36f6", "position": 3, "resource_type": null,
+        "size": 205046977, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/dbb9b83e-7779-4b99-89d2-1ff8099f36f6/resource/5aabb7a7-33ab-47b2-8b24-3e6765102f02/download/br-capes-btd-2022-2023-10-31.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-22T00:32:28.560774", "datastore_active": false, "description": "Anos
+        2021 a 2024", "format": "PDF", "hash": "", "id": "ffed0390-61b4-4823-99db-ea27e7cb8fad",
+        "last_modified": "2023-11-22T18:14:34.332075", "metadata_modified": "2023-11-22T18:14:34.365066",
+        "mimetype": "application/pdf", "mimetype_inner": null, "name": "Metadados
+        Cat\u00e1logo de Teses e Disserta\u00e7\u00f5es", "package_id": "dbb9b83e-7779-4b99-89d2-1ff8099f36f6",
+        "position": 4, "resource_type": null, "size": 1838543, "state": "active",
+        "url": "https://dadosabertos.capes.gov.br/dataset/dbb9b83e-7779-4b99-89d2-1ff8099f36f6/resource/ffed0390-61b4-4823-99db-ea27e7cb8fad/download/metadados-catalogo-de-teses-e-dissertacoes.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-22T23:54:51.895563", "datastore_active": false, "description": "Anos
+        2021 a 2024", "format": "HTML", "hash": "", "id": "2ee7cc5b-9705-4219-81b4-5fc4ea94ddc0",
+        "last_modified": null, "metadata_modified": "2023-11-22T18:22:06.706134",
+        "mimetype": null, "mimetype_inner": null, "name": "Link Metadados Cat\u00e1logo
+        de Teses e Disserta\u00e7\u00f5es", "package_id": "dbb9b83e-7779-4b99-89d2-1ff8099f36f6",
+        "position": 5, "resource_type": null, "size": null, "state": "active", "url":
+        "https://metadados.capes.gov.br/index.php/catalog/271", "url_type": null}],
+        "tags": [{"display_name": "Disserta\u00e7\u00f5es", "id": "87438b97-049d-448e-817f-1aa2cbd22889",
+        "name": "Disserta\u00e7\u00f5es", "state": "active", "vocabulary_id": null},
+        {"display_name": "Educa\u00e7\u00e3o", "id": "317d8381-8fc1-4c55-a113-5f5d725e9e86",
+        "name": "Educa\u00e7\u00e3o", "state": "active", "vocabulary_id": null}, {"display_name":
+        "Postgradute", "id": "b51645c5-237e-4932-89c5-5b7c9c14c3bb", "name": "Postgradute",
+        "state": "active", "vocabulary_id": null}, {"display_name": "Teses", "id":
+        "a3dfeff0-3337-4c3d-8fc6-aee59f66e3de", "name": "Teses", "state": "active",
+        "vocabulary_id": null}], "relationships_as_subject": [], "relationships_as_object":
+        []}, {"author": "", "author_email": "", "creator_user_id": "7fbacb25-45fb-4fbe-b0af-d096ae71912f",
+        "id": "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03", "isopen": true, "license_id":
+        "cc-by", "license_title": "Creative Commons Atribui\u00e7\u00e3o", "license_url":
+        "http://www.opendefinition.org/licenses/cc-by", "maintainer": "DAV", "maintainer_email":
+        "OUVIDORIA@CAPES.GOV.BR", "metadata_created": "2019-10-11T14:20:57.941337",
+        "metadata_modified": "2024-12-11T13:42:09.783263", "name": "2017-2020-catalogo-de-teses-e-dissertacoes-da-capes",
+        "notes": "O BTD da Capes \u00e9 uma plataforma que tem como objetivo facilitar
+        o acesso a informa\u00e7\u00f5es sobre teses e disserta\u00e7\u00f5es defendidas
+        junto a programas de p\u00f3s-gradua\u00e7\u00e3o do pa\u00eds, al\u00e9m
+        de disponibilizar informa\u00e7\u00f5es estat\u00edsticas acerca deste tipo
+        de produ\u00e7\u00e3o intelectual, e faz parte do Portal de Peri\u00f3dicos
+        da Institui\u00e7\u00e3o.\r\n\r\nEsta vers\u00e3o apresenta os metadados para
+        discentes da p\u00f3s-gradua\u00e7\u00e3o stricto sensu dos anos de 2017,
+        2018, 2019 e 2020.\r\n\r\nEm 16 de dezembro de 2021 o link web desta publica\u00e7\u00e3o
+        foi alterado de https://dadosabertos.capes.gov.br/dataset/2018-catalogo-de-teses-e-dissertacoes-da-capes
+        para https://dadosabertos.capes.gov.br/dataset/2017-2020-catalogo-de-teses-e-dissertacoes-da-capes",
+        "num_resources": 10, "num_tags": 4, "organization": {"id": "a994a478-5aaf-4e09-8372-134a0af7c0e8",
+        "name": "diretoria-de-avaliacao", "title": "Avalia\u00e7\u00e3o da P\u00f3s-Gradua\u00e7\u00e3o
+        Stricto Sensu", "type": "organization", "description": "A avalia\u00e7\u00e3o
+        da p\u00f3s-gradua\u00e7\u00e3o stricto senso tem como objetivo a certifica\u00e7\u00e3o
+        da qualidade da p\u00f3s-gradua\u00e7\u00e3o brasileira bem como a identifica\u00e7\u00e3o
+        de assimetrias regionais e de \u00e1reas estrat\u00e9gicas do conhecimento.
+        Ela \u00e9 orientada pela Diretoria de Avalia\u00e7\u00e3o/CAPES e realizada
+        com a participa\u00e7\u00e3o da comunidade acad\u00eamico-cient\u00edfica
+        por meio de consultores ad hoc. Tem como pilares a forma\u00e7\u00e3o p\u00f3s-graduada
+        de docentes para todos os n\u00edveis de ensino e de recursos humanos qualificados
+        para o mercado, bem como o fortalecimento das bases cient\u00edfica, tecnol\u00f3gica
+        e de inova\u00e7\u00e3o.", "image_url": "", "created": "2017-07-19T15:04:15.073147",
+        "is_organization": true, "approval_status": "approved", "state": "active"},
+        "owner_org": "a994a478-5aaf-4e09-8372-134a0af7c0e8", "private": false, "state":
+        "active", "title": "[2017 a 2020] Cat\u00e1logo de Teses e Disserta\u00e7\u00f5es
+        - Brasil", "type": "dataset", "url": "", "version": "1.0", "extras": [{"key":
+        "atualizacaoVersao", "value": "true"}, {"key": "coberturaEspacial", "value":
+        "FEDERAL"}, {"key": "coberturaTemporalFim", "value": "31/12/2020"}, {"key":
+        "coberturaTemporalInicio", "value": "01/01/2017"}, {"key": "granularidadeEspacial",
+        "value": "ESTADUAL"}, {"key": "periodicidade", "value": "ANUAL"}], "groups":
+        [{"description": "Os conjuntos de dados deste grupo cont\u00eam informa\u00e7\u00f5es
+        sobre as teses e disserta\u00e7\u00f5es da p\u00f3s-gradua\u00e7\u00e3o consolidados
+        a partir do Coleta Capes, os nomes dos autores, a data de defesa, a localiza\u00e7\u00e3o
+        da IES a qual o autor est\u00e1 vinculado, a \u00e1rea de conhecimento da
+        tese ou disserta\u00e7\u00e3o.", "display_name": "Cat\u00e1logo de Teses e
+        Disserta\u00e7\u00f5es - Brasil", "id": "6ea40c37-0f11-4c4d-a18c-cf1b9af8d0c2",
+        "image_display_url": "", "name": "catalogo-de-teses-e-dissertacoes-brasil",
+        "title": "Cat\u00e1logo de Teses e Disserta\u00e7\u00f5es - Brasil"}, {"description":
+        "Educa\u00e7\u00e3o.", "display_name": "Educa\u00e7\u00e3o", "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd",
+        "image_display_url": "", "name": "educacao", "title": "Educa\u00e7\u00e3o"},
+        {"description": "Pesquisa e Desenvolvimento.", "display_name": "Pesquisa e
+        Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695", "image_display_url":
+        "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa e Desenvolvimento"}],
+        "resources": [{"cache_last_updated": null, "cache_url": null, "created": "2021-12-14T19:07:12.741728",
+        "datastore_active": true, "description": "Ano 2017", "format": "CSV", "hash":
+        "", "id": "902bd63b-137f-4090-89e9-cab94f12c41d", "last_modified": "2024-08-21T17:14:08.829046",
+        "metadata_modified": "2024-08-21T17:14:08.882384", "mimetype": "text/csv",
+        "mimetype_inner": null, "name": "br-capes-btd-2017-2024-08-19", "package_id":
+        "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03", "position": 0, "resource_type": null,
+        "size": 449944414, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/36d1c92c-f9e0-4da1-a4f0-633e6ebefe03/resource/902bd63b-137f-4090-89e9-cab94f12c41d/download/br-capes-btd-2017-2024-08-19.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-12-14T19:08:16.737228", "datastore_active": true, "description": "Ano
+        2017", "format": "XLSX", "hash": "", "id": "a89e60ef-5c82-474c-a6d1-ef3607051e82",
+        "last_modified": "2024-08-21T17:16:24.810929", "metadata_modified": "2024-08-21T17:16:24.848072",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "br-capes-btd-2017-2024-08-19", "package_id":
+        "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03", "position": 1, "resource_type": null,
+        "size": 150654197, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/36d1c92c-f9e0-4da1-a4f0-633e6ebefe03/resource/a89e60ef-5c82-474c-a6d1-ef3607051e82/download/br-capes-btd-2017-2024-08-19.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-12-14T19:10:28.964553", "datastore_active": true, "description": "Ano
+        2018", "format": "CSV", "hash": "", "id": "638668a6-07da-4c7e-8aab-9044ae3cc753",
+        "last_modified": "2024-08-21T17:20:41.991959", "metadata_modified": "2024-08-21T17:20:42.040677",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "br-capes-btd-2018-2024-08-19",
+        "package_id": "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03", "position": 2, "resource_type":
+        null, "size": 480506868, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/36d1c92c-f9e0-4da1-a4f0-633e6ebefe03/resource/638668a6-07da-4c7e-8aab-9044ae3cc753/download/br-capes-btd-2018-2024-08-19.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-12-14T19:11:42.746899", "datastore_active": true, "description": "Ano
+        2018", "format": "XLSX", "hash": "", "id": "207ae663-b5bb-4fd2-a4e7-221f7ed9778a",
+        "last_modified": "2024-08-21T17:22:59.767915", "metadata_modified": "2024-08-21T17:22:59.813950",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "br-capes-btd-2018-2024-08-19", "package_id":
+        "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03", "position": 3, "resource_type": null,
+        "size": 160938893, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/36d1c92c-f9e0-4da1-a4f0-633e6ebefe03/resource/207ae663-b5bb-4fd2-a4e7-221f7ed9778a/download/br-capes-btd-2018-2024-08-19.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-12-14T19:13:14.806497", "datastore_active": true, "description": "Ano
+        2019", "format": "CSV", "hash": "", "id": "8f4f2bce-2744-460a-8f14-f1648c7a16df",
+        "last_modified": "2024-08-21T17:29:50.121620", "metadata_modified": "2024-08-21T17:29:50.161541",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "br-capes-btd-2019-2024-08-19",
+        "package_id": "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03", "position": 4, "resource_type":
+        null, "size": 505512933, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/36d1c92c-f9e0-4da1-a4f0-633e6ebefe03/resource/8f4f2bce-2744-460a-8f14-f1648c7a16df/download/br-capes-btd-2019-2024-08-19.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-12-14T19:14:19.315031", "datastore_active": true, "description": "Ano
+        2019", "format": "XLSX", "hash": "", "id": "48a3b54e-a303-406c-8982-7f4f903454d1",
+        "last_modified": "2024-08-21T17:33:53.776583", "metadata_modified": "2024-08-21T17:33:53.829119",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "br-capes-btd-2019-2024-08-19", "package_id":
+        "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03", "position": 5, "resource_type": null,
+        "size": 169342825, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/36d1c92c-f9e0-4da1-a4f0-633e6ebefe03/resource/48a3b54e-a303-406c-8982-7f4f903454d1/download/br-capes-btd-2019-2024-08-19.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-12-14T19:15:51.436230", "datastore_active": true, "description": "Ano
+        2020", "format": "CSV", "hash": "", "id": "e37df31a-f250-4405-8b21-ca7e5c7c1696",
+        "last_modified": "2024-08-21T17:44:21.980176", "metadata_modified": "2024-08-21T17:44:22.013570",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "br-capes-btd-2020-2024-08-19",
+        "package_id": "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03", "position": 6, "resource_type":
+        null, "size": 435618836, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/36d1c92c-f9e0-4da1-a4f0-633e6ebefe03/resource/e37df31a-f250-4405-8b21-ca7e5c7c1696/download/br-capes-btd-2020-2024-08-19.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-12-14T19:17:10.525288", "datastore_active": true, "description": "Ano
+        2020", "format": "XLSX", "hash": "", "id": "2a39435e-394e-4406-9b47-6a2bf90a814c",
+        "last_modified": "2024-08-21T17:46:11.798965", "metadata_modified": "2024-08-21T17:46:11.848069",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "br-capes-btd-2020-2024-08-19", "package_id":
+        "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03", "position": 7, "resource_type": null,
+        "size": 146046919, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/36d1c92c-f9e0-4da1-a4f0-633e6ebefe03/resource/2a39435e-394e-4406-9b47-6a2bf90a814c/download/br-capes-btd-2020-2024-08-19.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-12-14T19:18:49.314837", "datastore_active": false, "description": "Anos
+        2017 a 2020", "format": "PDF", "hash": "", "id": "755600b6-a0d6-4f1a-9dd8-1ca83f28f68a",
+        "last_modified": "2024-08-21T18:16:45.134093", "metadata_modified": "2024-08-21T18:22:08.641309",
+        "mimetype": "application/pdf", "mimetype_inner": null, "name": "Metadados
+        Banco de Teses e Disserta\u00e7\u00f5es 2017 a 2020", "package_id": "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03",
+        "position": 8, "resource_type": null, "size": 184491, "state": "active", "url":
+        "https://dadosabertos.capes.gov.br/dataset/36d1c92c-f9e0-4da1-a4f0-633e6ebefe03/resource/755600b6-a0d6-4f1a-9dd8-1ca83f28f68a/download/metadados_producao_catalogo_teses_dissertacoes_2017_2020.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-12-14T19:21:02.505625", "datastore_active": false, "description": "Anos
+        2017 a 2020", "format": "HTML", "hash": "", "id": "90334dab-c4a4-458e-b46e-e0d11c7e467c",
+        "last_modified": null, "metadata_modified": "2024-08-21T18:22:26.784255",
+        "mimetype": null, "mimetype_inner": null, "name": "Metadados Banco de Teses
+        e Disserta\u00e7\u00f5es 2017 a 2020", "package_id": "36d1c92c-f9e0-4da1-a4f0-633e6ebefe03",
+        "position": 9, "resource_type": null, "size": null, "state": "active", "url":
+        "https://metadados.capes.gov.br/index.php/catalog/288", "url_type": null}],
+        "tags": [{"display_name": "Disserta\u00e7\u00f5es", "id": "87438b97-049d-448e-817f-1aa2cbd22889",
+        "name": "Disserta\u00e7\u00f5es", "state": "active", "vocabulary_id": null},
+        {"display_name": "Educa\u00e7\u00e3o", "id": "317d8381-8fc1-4c55-a113-5f5d725e9e86",
+        "name": "Educa\u00e7\u00e3o", "state": "active", "vocabulary_id": null}, {"display_name":
+        "P\u00f3s-Gradua\u00e7\u00e3o", "id": "a011703e-3e8b-426b-97a5-8506339fe296",
+        "name": "P\u00f3s-Gradua\u00e7\u00e3o", "state": "active", "vocabulary_id":
+        null}, {"display_name": "Teses", "id": "a3dfeff0-3337-4c3d-8fc6-aee59f66e3de",
+        "name": "Teses", "state": "active", "vocabulary_id": null}], "relationships_as_subject":
+        [], "relationships_as_object": []}, {"author": "", "author_email": "", "creator_user_id":
+        "7fbacb25-45fb-4fbe-b0af-d096ae71912f", "id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7",
+        "isopen": true, "license_id": "cc-by", "license_title": "Creative Commons
+        Atribui\u00e7\u00e3o", "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "DAV", "maintainer_email": "OUVIDORIA@CAPES.GOV.BR", "metadata_created":
+        "2018-01-19T16:04:55.803000", "metadata_modified": "2024-12-06T19:33:19.633235",
+        "name": "catalogo-de-teses-e-dissertacoes-de-2013-a-2016", "notes": "Os dados
+        cont\u00eam informa\u00e7\u00f5es sobre as Teses e Disserta\u00e7\u00f5es
+        da P\u00f3s-Gradua\u00e7\u00e3o de 2013 a 2016 consolidados a partir do COLETA
+        CAPES, os nomes dos autores, a data de defesa, a localiza\u00e7\u00e3o da
+        IES a qual o autor est\u00e1 vinculado, a \u00e1rea de conhecimento da tese
+        ou disserta\u00e7\u00e3o.\r\n\r\n\r\nNo ano de 2013 temos 67.534 registros
+        com 67.503 autores distintos dos 3.115 Programas de P\u00f3s-Gradua\u00e7\u00e3o
+        de 334 IES.\r\n\r\n\r\nNo ano de 2014 temos 70.668 registros com 70.642 autores
+        distintos dos 3.332 Programas de P\u00f3s-Gradua\u00e7\u00e3o de 353 IES.\r\n\r\n\r\nNo
+        ano de 2015 temos 75.884 registros com 75.865 autores distintos dos 3.570
+        Programas de P\u00f3s-Gradua\u00e7\u00e3o de 374 IES.\r\n\r\n\r\nNo ano de
+        2016 temos 80.278 registros com 80.256 autores distintos dos 3.764 Programas
+        de P\u00f3s-Gradua\u00e7\u00e3o de 393 IES.", "num_resources": 10, "num_tags":
+        5, "organization": {"id": "a994a478-5aaf-4e09-8372-134a0af7c0e8", "name":
+        "diretoria-de-avaliacao", "title": "Avalia\u00e7\u00e3o da P\u00f3s-Gradua\u00e7\u00e3o
+        Stricto Sensu", "type": "organization", "description": "A avalia\u00e7\u00e3o
+        da p\u00f3s-gradua\u00e7\u00e3o stricto senso tem como objetivo a certifica\u00e7\u00e3o
+        da qualidade da p\u00f3s-gradua\u00e7\u00e3o brasileira bem como a identifica\u00e7\u00e3o
+        de assimetrias regionais e de \u00e1reas estrat\u00e9gicas do conhecimento.
+        Ela \u00e9 orientada pela Diretoria de Avalia\u00e7\u00e3o/CAPES e realizada
+        com a participa\u00e7\u00e3o da comunidade acad\u00eamico-cient\u00edfica
+        por meio de consultores ad hoc. Tem como pilares a forma\u00e7\u00e3o p\u00f3s-graduada
+        de docentes para todos os n\u00edveis de ensino e de recursos humanos qualificados
+        para o mercado, bem como o fortalecimento das bases cient\u00edfica, tecnol\u00f3gica
+        e de inova\u00e7\u00e3o.", "image_url": "", "created": "2017-07-19T15:04:15.073147",
+        "is_organization": true, "approval_status": "approved", "state": "active"},
+        "owner_org": "a994a478-5aaf-4e09-8372-134a0af7c0e8", "private": false, "state":
+        "active", "title": "[2013 a 2016] Cat\u00e1logo de Teses e Disserta\u00e7\u00f5es
+        - Brasil", "type": "dataset", "url": "", "version": "2.0", "extras": [{"key":
+        "atualizacaoVersao", "value": "true"}, {"key": "coberturaEspacial", "value":
+        "FEDERAL"}, {"key": "coberturaTemporalFim", "value": "31/12/2016"}, {"key":
+        "coberturaTemporalInicio", "value": "01/01/2013"}, {"key": "granularidadeEspacial",
+        "value": "ESTADUAL"}, {"key": "periodicidade", "value": "ANUAL"}], "groups":
+        [{"description": "Os conjuntos de dados deste grupo cont\u00eam informa\u00e7\u00f5es
+        sobre as teses e disserta\u00e7\u00f5es da p\u00f3s-gradua\u00e7\u00e3o consolidados
+        a partir do Coleta Capes, os nomes dos autores, a data de defesa, a localiza\u00e7\u00e3o
+        da IES a qual o autor est\u00e1 vinculado, a \u00e1rea de conhecimento da
+        tese ou disserta\u00e7\u00e3o.", "display_name": "Cat\u00e1logo de Teses e
+        Disserta\u00e7\u00f5es - Brasil", "id": "6ea40c37-0f11-4c4d-a18c-cf1b9af8d0c2",
+        "image_display_url": "", "name": "catalogo-de-teses-e-dissertacoes-brasil",
+        "title": "Cat\u00e1logo de Teses e Disserta\u00e7\u00f5es - Brasil"}, {"description":
+        "Educa\u00e7\u00e3o.", "display_name": "Educa\u00e7\u00e3o", "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd",
+        "image_display_url": "", "name": "educacao", "title": "Educa\u00e7\u00e3o"},
+        {"description": "Pesquisa e Desenvolvimento.", "display_name": "Pesquisa e
+        Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695", "image_display_url":
+        "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa e Desenvolvimento"}],
+        "resources": [{"cache_last_updated": null, "cache_url": null, "created": "2022-01-28T10:16:48.615487",
+        "datastore_active": true, "description": "Ano 2013", "format": "CSV", "hash":
+        "", "id": "49155638-ffc6-4782-a3ca-489bb4345324", "last_modified": "2022-01-28T10:16:48.455285",
+        "metadata_modified": "2022-01-28T10:16:48.615487", "mimetype": null, "mimetype_inner":
+        null, "name": "br-capes-btd-2013a2016-2017-12-01_2013", "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7",
+        "position": 0, "resource_type": null, "size": null, "state": "active", "url":
+        "https://dadosabertos.capes.gov.br/dataset/4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7/resource/49155638-ffc6-4782-a3ca-489bb4345324/download/br-capes-btd-2013a2016-2017-12-01_2013.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-01-28T10:17:45.643414", "datastore_active": true, "description": "Ano
+        2013", "format": "XLSX", "hash": "", "id": "f9557da6-a98c-445c-87eb-506f60c10d28",
+        "last_modified": "2022-01-28T10:17:45.490836", "metadata_modified": "2022-01-28T10:17:45.643414",
+        "mimetype": null, "mimetype_inner": null, "name": "br-capes-btd-2013a2016-2017-12-01_2013",
+        "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7", "position": 1, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7/resource/f9557da6-a98c-445c-87eb-506f60c10d28/download/br-capes-btd-2013a2016-2017-12-01_2013.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-01-28T10:18:51.550987", "datastore_active": true, "description": "Ano
+        2014", "format": "CSV", "hash": "", "id": "bf1a79a5-ac49-44e8-b4a5-eca30fb48174",
+        "last_modified": "2022-01-28T10:18:51.257661", "metadata_modified": "2022-01-28T10:18:51.550987",
+        "mimetype": null, "mimetype_inner": null, "name": "br-capes-btd-2013a2016-2017-12-01_2014",
+        "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7", "position": 2, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7/resource/bf1a79a5-ac49-44e8-b4a5-eca30fb48174/download/br-capes-btd-2013a2016-2017-12-01_2014.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-01-28T10:19:45.822269", "datastore_active": false, "description": "Ano
+        2014", "format": "XLSX", "hash": "", "id": "cab42797-f66a-4529-a6c5-470aec49bf8c",
+        "last_modified": "2022-01-28T10:19:45.663780", "metadata_modified": "2022-01-28T10:19:45.822269",
+        "mimetype": null, "mimetype_inner": null, "name": "br-capes-btd-2013a2016-2017-12-01_2014",
+        "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7", "position": 3, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7/resource/cab42797-f66a-4529-a6c5-470aec49bf8c/download/br-capes-btd-2013a2016-2017-12-01_2014.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-01-28T10:21:09.617225", "datastore_active": false, "description": "Ano
+        2015", "format": "CSV", "hash": "", "id": "e4e2325f-6638-42b3-b801-03c418970a9e",
+        "last_modified": "2022-01-28T10:21:09.482859", "metadata_modified": "2022-01-28T10:21:09.617225",
+        "mimetype": null, "mimetype_inner": null, "name": "br-capes-btd-2013a2016-2017-12-01_2015",
+        "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7", "position": 4, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7/resource/e4e2325f-6638-42b3-b801-03c418970a9e/download/br-capes-btd-2013a2016-2017-12-01_2015.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-01-28T10:22:50.886683", "datastore_active": true, "description": "Ano
+        2015", "format": "XLSX", "hash": "", "id": "2ba5eaae-2e2c-4886-8c5c-0d20bd115ef2",
+        "last_modified": "2022-01-28T10:22:25.924986", "metadata_modified": "2022-01-28T10:22:50.886683",
+        "mimetype": null, "mimetype_inner": null, "name": "br-capes-btd-2013a2016-2017-12-01_2015",
+        "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7", "position": 5, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7/resource/2ba5eaae-2e2c-4886-8c5c-0d20bd115ef2/download/br-capes-btd-2013a2016-2017-12-01_2015.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-01-28T10:24:54.735952", "datastore_active": true, "description": "Ano
+        2016", "format": "CSV", "hash": "", "id": "7403d9ac-0e71-4539-bc44-8d7aa7b8f452",
+        "last_modified": "2022-01-28T10:24:54.197163", "metadata_modified": "2022-01-28T10:24:54.735952",
+        "mimetype": null, "mimetype_inner": null, "name": "br-capes-btd-2013a2016-2017-12-01_2016",
+        "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7", "position": 6, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7/resource/7403d9ac-0e71-4539-bc44-8d7aa7b8f452/download/br-capes-btd-2013a2016-2017-12-01_2016.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-01-28T10:27:14.911074", "datastore_active": true, "description": "Ano
+        2016", "format": "XLSX", "hash": "", "id": "46cc36ed-61b3-4312-8e67-b6ffd236ce54",
+        "last_modified": "2022-01-28T10:27:14.743171", "metadata_modified": "2022-01-28T10:27:14.911074",
+        "mimetype": null, "mimetype_inner": null, "name": "br-capes-btd-2013a2016-2017-12-01_2016",
+        "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7", "position": 7, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7/resource/46cc36ed-61b3-4312-8e67-b6ffd236ce54/download/br-capes-btd-2013a2016-2017-12-01_2016.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2018-01-19T16:11:25.377565", "datastore_active": true, "description": "",
+        "format": "PDF", "hash": "", "id": "a19b768f-42f6-4c0b-9245-27e242ba7000",
+        "last_modified": "2021-02-18T17:49:17.714641", "metadata_modified": "2018-01-19T16:11:25.377565",
+        "mimetype": null, "mimetype_inner": null, "name": "Metadados Cat\u00e1logo
+        de Teses e Disserta\u00e7\u00f5es 2013 a 2016", "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7",
+        "position": 8, "resource_type": null, "size": null, "state": "active", "url":
+        "https://dadosabertos.capes.gov.br/dataset/4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7/resource/a19b768f-42f6-4c0b-9245-27e242ba7000/download/metadados_catalogo_teses_dissertacoes_2013_2016.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2018-01-19T16:12:36.135293", "datastore_active": true, "description": "",
+        "format": "HTML", "hash": "", "id": "dc17a0aa-b424-48a7-9eff-e90ec30d7865",
+        "last_modified": null, "metadata_modified": "2018-01-19T16:12:36.135293",
+        "mimetype": null, "mimetype_inner": null, "name": "Link Metadados Cat\u00e1logo
+        de Teses e Disserta\u00e7\u00f5es 2013 a 2016 ", "package_id": "4b0780eb-5ba4-48d4-8d6a-0b77c56f2fd7",
+        "position": 9, "resource_type": null, "size": null, "state": "active", "url":
+        "https://metadados.capes.gov.br/index.php/catalog/115", "url_type": null}],
+        "tags": [{"display_name": "Disserta\u00e7\u00f5es", "id": "87438b97-049d-448e-817f-1aa2cbd22889",
+        "name": "Disserta\u00e7\u00f5es", "state": "active", "vocabulary_id": null},
+        {"display_name": "Educa\u00e7\u00e3o", "id": "317d8381-8fc1-4c55-a113-5f5d725e9e86",
+        "name": "Educa\u00e7\u00e3o", "state": "active", "vocabulary_id": null}, {"display_name":
+        "Graduate", "id": "74875a71-080f-47b5-ae29-e0cbb87b8bab", "name": "Graduate",
+        "state": "active", "vocabulary_id": null}, {"display_name": "P\u00f3s-Gradua\u00e7\u00e3o",
+        "id": "a011703e-3e8b-426b-97a5-8506339fe296", "name": "P\u00f3s-Gradua\u00e7\u00e3o",
+        "state": "active", "vocabulary_id": null}, {"display_name": "Teses", "id":
+        "a3dfeff0-3337-4c3d-8fc6-aee59f66e3de", "name": "Teses", "state": "active",
+        "vocabulary_id": null}], "relationships_as_subject": [], "relationships_as_object":
+        []}, {"author": "", "author_email": "", "creator_user_id": "7fbacb25-45fb-4fbe-b0af-d096ae71912f",
+        "id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "isopen": true, "license_id":
+        "cc-by", "license_title": "Creative Commons Atribui\u00e7\u00e3o", "license_url":
+        "http://www.opendefinition.org/licenses/cc-by", "maintainer": "DAV", "maintainer_email":
+        "OUVIDORIA@CAPES.GOV.BR", "metadata_created": "2019-11-06T21:44:22.660717",
+        "metadata_modified": "2024-12-05T17:26:22.076866", "name": "1987-a-2012-catalogo-de-teses-e-dissertacoes-brasil",
+        "notes": "Os dados cont\u00eam informa\u00e7\u00f5es sobre as Teses e Disserta\u00e7\u00f5es
+        da P\u00f3s-Gradua\u00e7\u00e3o, consolidados a partir do COLETA CAPES, para
+        os anos de 1987 a 2012.", "num_resources": 54, "num_tags": 4, "organization":
+        {"id": "a994a478-5aaf-4e09-8372-134a0af7c0e8", "name": "diretoria-de-avaliacao",
+        "title": "Avalia\u00e7\u00e3o da P\u00f3s-Gradua\u00e7\u00e3o Stricto Sensu",
+        "type": "organization", "description": "A avalia\u00e7\u00e3o da p\u00f3s-gradua\u00e7\u00e3o
+        stricto senso tem como objetivo a certifica\u00e7\u00e3o da qualidade da p\u00f3s-gradua\u00e7\u00e3o
+        brasileira bem como a identifica\u00e7\u00e3o de assimetrias regionais e de
+        \u00e1reas estrat\u00e9gicas do conhecimento. Ela \u00e9 orientada pela Diretoria
+        de Avalia\u00e7\u00e3o/CAPES e realizada com a participa\u00e7\u00e3o da comunidade
+        acad\u00eamico-cient\u00edfica por meio de consultores ad hoc. Tem como pilares
+        a forma\u00e7\u00e3o p\u00f3s-graduada de docentes para todos os n\u00edveis
+        de ensino e de recursos humanos qualificados para o mercado, bem como o fortalecimento
+        das bases cient\u00edfica, tecnol\u00f3gica e de inova\u00e7\u00e3o.", "image_url":
+        "", "created": "2017-07-19T15:04:15.073147", "is_organization": true, "approval_status":
+        "approved", "state": "active"}, "owner_org": "a994a478-5aaf-4e09-8372-134a0af7c0e8",
+        "private": false, "state": "active", "title": "[1987 a 2012] Cat\u00e1logo
+        de Teses e Disserta\u00e7\u00f5es - Brasil", "type": "dataset", "url": "",
+        "version": "1.0", "extras": [{"key": "atualizacaoVersao", "value": "true"},
+        {"key": "coberturaEspacial", "value": "FEDERAL"}, {"key": "coberturaTemporalFim",
+        "value": "31/12/2012"}, {"key": "coberturaTemporalInicio", "value": "01/01/1987"},
+        {"key": "granularidadeEspacial", "value": "ESTADUAL"}, {"key": "periodicidade",
+        "value": "ANUAL"}], "groups": [{"description": "Os conjuntos de dados deste
+        grupo cont\u00eam informa\u00e7\u00f5es sobre as teses e disserta\u00e7\u00f5es
+        da p\u00f3s-gradua\u00e7\u00e3o consolidados a partir do Coleta Capes, os
+        nomes dos autores, a data de defesa, a localiza\u00e7\u00e3o da IES a qual
+        o autor est\u00e1 vinculado, a \u00e1rea de conhecimento da tese ou disserta\u00e7\u00e3o.",
+        "display_name": "Cat\u00e1logo de Teses e Disserta\u00e7\u00f5es - Brasil",
+        "id": "6ea40c37-0f11-4c4d-a18c-cf1b9af8d0c2", "image_display_url": "", "name":
+        "catalogo-de-teses-e-dissertacoes-brasil", "title": "Cat\u00e1logo de Teses
+        e Disserta\u00e7\u00f5es - Brasil"}, {"description": "Educa\u00e7\u00e3o.",
+        "display_name": "Educa\u00e7\u00e3o", "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd",
+        "image_display_url": "", "name": "educacao", "title": "Educa\u00e7\u00e3o"},
+        {"description": "Pesquisa e Desenvolvimento.", "display_name": "Pesquisa e
+        Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695", "image_display_url":
+        "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa e Desenvolvimento"}],
+        "resources": [{"cache_last_updated": null, "cache_url": null, "created": "2019-11-06T21:59:58.872665",
+        "datastore_active": true, "description": "Ano Base - 1987", "format": "CSV",
+        "hash": "", "id": "d88871ae-6e54-490c-96bb-9740e250d3f2", "last_modified":
+        "2021-02-18T18:06:37.847704", "metadata_modified": "2019-11-06T21:59:58.872665",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1987-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 0, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/d88871ae-6e54-490c-96bb-9740e250d3f2/download/dados_1987.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-03-03T13:01:15.800206", "datastore_active": false, "description": "Ano
+        Base - 1987", "format": "XLSX", "hash": "", "id": "2b014b26-65ba-4f4c-b091-471c50436c07",
+        "last_modified": "2021-03-03T13:01:15.567554", "metadata_modified": "2021-03-03T13:01:15.800206",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1987-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 1, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/2b014b26-65ba-4f4c-b091-471c50436c07/download/dados_1987.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:37:15.686130", "datastore_active": true, "description": "Ano
+        Base - 1988", "format": "CSV", "hash": "", "id": "c93c429c-3fc5-4f2e-99fc-8a29c14c1f97",
+        "last_modified": "2021-02-18T18:07:27.847272", "metadata_modified": "2019-11-07T14:37:15.686130",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1988-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 2, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/c93c429c-3fc5-4f2e-99fc-8a29c14c1f97/download/dados_1988.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:38:49.062798", "datastore_active": true, "description": "Ano
+        Base - 1988", "format": "XLSX", "hash": "", "id": "e1c4e7f8-3031-4aea-b22d-bf41ebebd892",
+        "last_modified": "2021-02-18T18:08:19.221107", "metadata_modified": "2019-11-07T14:38:49.062798",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1988-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 3, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/e1c4e7f8-3031-4aea-b22d-bf41ebebd892/download/dados_1988.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:40:01.086001", "datastore_active": true, "description": "Ano
+        Base - 1989", "format": "CSV", "hash": "", "id": "dc28638b-a089-48d3-94c1-076a92ef618b",
+        "last_modified": "2021-02-18T18:10:35.610872", "metadata_modified": "2019-11-07T14:40:01.086001",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1989-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 4, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/dc28638b-a089-48d3-94c1-076a92ef618b/download/dados_1989.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T19:00:33.949358", "datastore_active": true, "description": "Ano
+        Base - 1989", "format": "XLSX", "hash": "", "id": "60a4ae38-5904-4003-98a6-4c3b0f33cd50",
+        "last_modified": "2021-02-18T18:11:03.124969", "metadata_modified": "2019-11-07T19:00:33.949358",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1989-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 5, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/60a4ae38-5904-4003-98a6-4c3b0f33cd50/download/dados_1989.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:42:37.572503", "datastore_active": true, "description": "Ano
+        Base - 1990", "format": "CSV", "hash": "", "id": "89ab63cf-50ea-492a-aa6b-e44141f2393d",
+        "last_modified": "2021-02-18T18:11:31.727878", "metadata_modified": "2019-11-07T14:42:37.572503",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1990-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 6, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/89ab63cf-50ea-492a-aa6b-e44141f2393d/download/dados_1990.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-03-03T13:06:15.438846", "datastore_active": false, "description": "Ano
+        Base - 1990", "format": "XLSX", "hash": "", "id": "d50eb271-dbdb-4779-91e0-3d56f39651ff",
+        "last_modified": "2021-03-03T13:06:15.207838", "metadata_modified": "2021-03-03T13:06:15.438846",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1990-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 7, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/d50eb271-dbdb-4779-91e0-3d56f39651ff/download/dados_1990.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:47:54.360155", "datastore_active": true, "description": "Ano
+        Base - 1991", "format": "CSV", "hash": "", "id": "3dad8374-ea20-4719-a7f3-ee422ef2052d",
+        "last_modified": "2021-02-18T18:12:24.675141", "metadata_modified": "2019-11-07T14:47:54.360155",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1991-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 8, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/3dad8374-ea20-4719-a7f3-ee422ef2052d/download/dados_1991.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T19:59:39.732449", "datastore_active": true, "description": "Ano
+        Base - 1991", "format": "XLSX", "hash": "", "id": "500efd13-23ea-4c4f-b468-147dd553e8c1",
+        "last_modified": "2021-02-18T18:12:52.284764", "metadata_modified": "2019-11-07T19:59:39.732449",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1991-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 9, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/500efd13-23ea-4c4f-b468-147dd553e8c1/download/dados_1991.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:50:32.361958", "datastore_active": true, "description": "Ano
+        Base - 1992", "format": "CSV", "hash": "", "id": "d634ba12-a4b1-41a2-a00d-94deaf2cdef5",
+        "last_modified": "2021-02-18T18:13:19.577732", "metadata_modified": "2019-11-07T14:50:32.361958",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1992-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 10, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/d634ba12-a4b1-41a2-a00d-94deaf2cdef5/download/dados_1992.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:52:00.557708", "datastore_active": true, "description": "Ano
+        Base - 1992", "format": "XLSX", "hash": "", "id": "f4ae43ad-48d8-4560-9ce5-15b41a8d76b4",
+        "last_modified": "2021-02-18T18:13:52.504647", "metadata_modified": "2019-11-07T14:52:00.557708",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1992-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 11, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/f4ae43ad-48d8-4560-9ce5-15b41a8d76b4/download/dados_1992.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:53:18.225985", "datastore_active": true, "description": "Ano
+        Base - 1993", "format": "CSV", "hash": "", "id": "14707275-88e1-4ccf-a856-b06705f71775",
+        "last_modified": "2021-02-18T18:14:18.916194", "metadata_modified": "2019-11-07T14:53:18.225985",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1993-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 12, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/14707275-88e1-4ccf-a856-b06705f71775/download/dados_1993.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:54:29.626098", "datastore_active": true, "description": "Ano
+        Base - 1993", "format": "XLSX", "hash": "", "id": "efeb6bb4-689f-4050-a161-405a08d3091c",
+        "last_modified": "2021-02-18T18:14:44.871489", "metadata_modified": "2019-11-07T14:54:29.626098",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1993-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 13, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/efeb6bb4-689f-4050-a161-405a08d3091c/download/dados_1993.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:55:55.517996", "datastore_active": true, "description": "Ano
+        Base - 1994", "format": "CSV", "hash": "", "id": "de7bfb29-1567-4a5c-8dd6-fb3928670b6b",
+        "last_modified": "2021-02-18T18:15:07.439847", "metadata_modified": "2019-11-07T14:55:55.517996",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1994-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 14, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/de7bfb29-1567-4a5c-8dd6-fb3928670b6b/download/dados_1994.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T14:57:06.536536", "datastore_active": true, "description": "Ano
+        Base - 1994", "format": "XLSX", "hash": "", "id": "409c5c66-fa23-400c-b4d6-e7faed6dac61",
+        "last_modified": "2021-02-18T18:15:28.497352", "metadata_modified": "2019-11-07T14:57:06.536536",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1994-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 15, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/409c5c66-fa23-400c-b4d6-e7faed6dac61/download/dados_1994.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T16:58:54.822746", "datastore_active": true, "description": "Ano
+        Base - 1995", "format": "CSV", "hash": "", "id": "8b8d7773-fea6-48bb-b528-e201021d8d92",
+        "last_modified": "2021-02-18T18:15:57.213750", "metadata_modified": "2019-11-07T16:58:54.822746",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1995-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 16, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/8b8d7773-fea6-48bb-b528-e201021d8d92/download/dados_1995.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:11:00.720127", "datastore_active": true, "description": "Ano
+        Base - 1995", "format": "XLSX", "hash": "", "id": "005c4093-382c-49ac-a381-5b1783db3218",
+        "last_modified": "2021-02-18T18:16:20.805624", "metadata_modified": "2019-11-07T17:11:00.720127",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1995-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 17, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/005c4093-382c-49ac-a381-5b1783db3218/download/dados_1995.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:11:59.310194", "datastore_active": true, "description": "Ano
+        Base - 1996", "format": "CSV", "hash": "", "id": "05d53c4b-4566-476c-8c25-754a94d8a30c",
+        "last_modified": "2021-02-18T18:16:49.430710", "metadata_modified": "2019-11-07T17:11:59.310194",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1996-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 18, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/05d53c4b-4566-476c-8c25-754a94d8a30c/download/dados_1996.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:13:16.736001", "datastore_active": true, "description": "Ano
+        Base - 1996", "format": "XLSX", "hash": "", "id": "50af4bb1-1257-447e-aa6f-8cf8fd85de44",
+        "last_modified": "2021-02-18T18:17:15.243347", "metadata_modified": "2019-11-07T17:13:16.736001",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1996-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 19, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/50af4bb1-1257-447e-aa6f-8cf8fd85de44/download/dados_1996.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:14:16.426376", "datastore_active": true, "description": "Ano
+        Base - 1997", "format": "CSV", "hash": "", "id": "96510eba-30c7-436c-91f7-808550a98d11",
+        "last_modified": "2021-02-18T18:17:46.824669", "metadata_modified": "2019-11-07T17:14:16.426376",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1997-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 20, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/96510eba-30c7-436c-91f7-808550a98d11/download/dados_1997.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:15:25.229796", "datastore_active": true, "description": "Ano
+        Base - 1997", "format": "XLSX", "hash": "", "id": "b9936031-079a-400f-b442-989081af83af",
+        "last_modified": "2021-02-18T18:18:16.402349", "metadata_modified": "2019-11-07T17:15:25.229796",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1997-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 21, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/b9936031-079a-400f-b442-989081af83af/download/dados_1997.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:16:28.431463", "datastore_active": true, "description": "Ano
+        Base - 1998", "format": "CSV", "hash": "", "id": "9e60a625-7c27-47f3-a7e9-7f4db4171422",
+        "last_modified": "2021-02-18T18:18:44.965550", "metadata_modified": "2019-11-07T17:16:28.431463",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1998-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 22, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/9e60a625-7c27-47f3-a7e9-7f4db4171422/download/dados_1998.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:33:59.511905", "datastore_active": true, "description": "Ano
+        Base - 1998", "format": "XLSX", "hash": "", "id": "fe8b1d4f-37b9-4a17-b144-3362481c9988",
+        "last_modified": "2021-02-18T18:19:10.409819", "metadata_modified": "2019-11-07T17:33:59.511905",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1998-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 23, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/fe8b1d4f-37b9-4a17-b144-3362481c9988/download/dados_1998.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:35:42.612190", "datastore_active": true, "description": "Ano
+        Base - 1999", "format": "CSV", "hash": "", "id": "cdace9a4-29de-4a1a-a935-a695a69c1c50",
+        "last_modified": "2021-02-18T18:19:41.047919", "metadata_modified": "2019-11-07T17:35:42.612190",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1999-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 24, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/cdace9a4-29de-4a1a-a935-a695a69c1c50/download/dados_1999.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:38:14.601608", "datastore_active": true, "description": "Ano
+        Base - 1999", "format": "XLSX", "hash": "", "id": "cde41697-c426-4700-831f-5ef571a6d266",
+        "last_modified": "2021-02-18T18:20:04.322849", "metadata_modified": "2019-11-07T17:38:14.601608",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-1999-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 25, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/cde41697-c426-4700-831f-5ef571a6d266/download/dados_1999.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:39:43.790143", "datastore_active": true, "description": "Ano
+        Base - 2000", "format": "CSV", "hash": "", "id": "6cb47471-ffc1-44e0-b60b-324993dc0e8f",
+        "last_modified": "2021-02-18T18:20:33.913201", "metadata_modified": "2019-11-07T17:39:43.790143",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2000-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 26, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/6cb47471-ffc1-44e0-b60b-324993dc0e8f/download/dados_2000.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:40:38.253136", "datastore_active": true, "description": "Ano
+        Base - 2000", "format": "XLSX", "hash": "", "id": "64d09d20-46d5-4f03-a2ed-971d2d229432",
+        "last_modified": "2021-02-18T18:20:59.055989", "metadata_modified": "2019-11-07T17:40:38.253136",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2000-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 27, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/64d09d20-46d5-4f03-a2ed-971d2d229432/download/dados_2000.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:53:55.637068", "datastore_active": true, "description": "Ano
+        Base - 2001", "format": "CSV", "hash": "", "id": "b6ab4de3-6d51-4073-8452-5c29eaf48e94",
+        "last_modified": "2021-02-18T18:21:30.330505", "metadata_modified": "2019-11-07T17:53:55.637068",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2001-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 28, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/b6ab4de3-6d51-4073-8452-5c29eaf48e94/download/dados_2001.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:56:38.017657", "datastore_active": true, "description": "Ano
+        Base - 2001", "format": "XLSX", "hash": "", "id": "b81fc118-7893-469e-b9f4-7e40235598ea",
+        "last_modified": "2021-02-18T18:21:56.281212", "metadata_modified": "2019-11-07T17:56:38.017657",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2001-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 29, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/b81fc118-7893-469e-b9f4-7e40235598ea/download/dados_2001.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:57:43.591205", "datastore_active": true, "description": "Ano
+        Base - 2002", "format": "CSV", "hash": "", "id": "28bcef08-3743-4400-a215-57cb10c5b72e",
+        "last_modified": "2021-02-18T18:22:30.401007", "metadata_modified": "2019-11-07T17:57:43.591205",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2002-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 30, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/28bcef08-3743-4400-a215-57cb10c5b72e/download/dados_2002.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T17:59:27.786642", "datastore_active": true, "description": "Ano
+        Base - 2002", "format": "XLSX", "hash": "", "id": "11143ef7-76f1-4cec-b2d0-cc06f9053481",
+        "last_modified": "2021-02-18T18:22:57.434974", "metadata_modified": "2019-11-07T17:59:27.786642",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2002-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 31, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/11143ef7-76f1-4cec-b2d0-cc06f9053481/download/dados_2002.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:00:55.360228", "datastore_active": true, "description": "Ano
+        Base - 2003", "format": "CSV", "hash": "", "id": "993b0bd7-7855-4fc1-838c-ed4ccc4e43fe",
+        "last_modified": "2021-02-18T18:23:28.925474", "metadata_modified": "2019-11-07T18:00:55.360228",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2003-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 32, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/993b0bd7-7855-4fc1-838c-ed4ccc4e43fe/download/dados_2003.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:04:16.678893", "datastore_active": true, "description": "Ano
+        Base - 2003", "format": "XLSX", "hash": "", "id": "424182de-c430-452c-ae7f-1793545b07bf",
+        "last_modified": "2021-02-18T18:23:57.736313", "metadata_modified": "2019-11-07T18:04:16.678893",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2003-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 33, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/424182de-c430-452c-ae7f-1793545b07bf/download/dados_2003.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T21:28:03.630010", "datastore_active": true, "description": "Ano
+        Base - 2004", "format": "CSV", "hash": "", "id": "3eb161a2-d94d-409f-8da4-9899fcaae5a6",
+        "last_modified": "2021-02-18T18:24:39.546866", "metadata_modified": "2019-11-07T21:28:03.630010",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2004-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 34, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/3eb161a2-d94d-409f-8da4-9899fcaae5a6/download/dados_2004.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:15:04.018077", "datastore_active": true, "description": "Ano
+        Base - 2004", "format": "XLSX", "hash": "", "id": "7926fa44-b9ac-41fa-a832-9b3a92feedea",
+        "last_modified": "2021-02-18T18:25:12.987893", "metadata_modified": "2019-11-07T18:15:04.018077",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2004-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 35, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/7926fa44-b9ac-41fa-a832-9b3a92feedea/download/dados_2004.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:25:33.413544", "datastore_active": true, "description": "Ano
+        Base - 2005", "format": "CSV", "hash": "", "id": "8cc24314-564c-4365-8bfd-30129dee9962",
+        "last_modified": "2021-02-18T18:25:47.462184", "metadata_modified": "2019-11-07T18:25:33.413544",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2005-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 36, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/8cc24314-564c-4365-8bfd-30129dee9962/download/dados_2005.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:27:22.559632", "datastore_active": true, "description": "Ano
+        Base - 2005", "format": "XLSX", "hash": "", "id": "456af85d-29bc-4cba-91b5-40a390cbdc77",
+        "last_modified": "2021-02-18T18:26:18.943851", "metadata_modified": "2019-11-07T18:27:22.559632",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2005-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 37, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/456af85d-29bc-4cba-91b5-40a390cbdc77/download/dados_2005.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:29:39.892462", "datastore_active": true, "description": "Ano
+        Base - 2006", "format": "CSV", "hash": "", "id": "d3f6882d-9315-4af4-8704-32a0684c57b9",
+        "last_modified": "2021-02-18T18:26:53.103344", "metadata_modified": "2019-11-07T18:29:39.892462",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2006-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 38, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/d3f6882d-9315-4af4-8704-32a0684c57b9/download/dados_2006.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:48:51.810231", "datastore_active": true, "description": "Ano
+        Base - 2006", "format": "XLSX", "hash": "", "id": "67fcaca2-0ef9-4503-a042-508d21bad823",
+        "last_modified": "2021-02-18T18:27:25.695757", "metadata_modified": "2019-11-07T18:48:51.810231",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2006-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 39, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/67fcaca2-0ef9-4503-a042-508d21bad823/download/dados_2006.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:50:23.610958", "datastore_active": true, "description": "Ano
+        Base - 2007", "format": "CSV", "hash": "", "id": "6bda3a7e-f723-40cd-90a2-691e9b443b66",
+        "last_modified": "2021-02-18T18:28:03.130438", "metadata_modified": "2019-11-07T18:50:23.610958",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2007-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 40, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/6bda3a7e-f723-40cd-90a2-691e9b443b66/download/dados_2007.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:51:24.093588", "datastore_active": true, "description": "Ano
+        Base - 2007", "format": "XLSX", "hash": "", "id": "b67ec59c-a921-4143-8b7e-9f2d0e6125d9",
+        "last_modified": "2021-02-18T18:28:36.590571", "metadata_modified": "2019-11-07T18:51:24.093588",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2007-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 41, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/b67ec59c-a921-4143-8b7e-9f2d0e6125d9/download/dados_2007.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:52:34.576372", "datastore_active": true, "description": "Ano
+        Base - 2008", "format": "CSV", "hash": "", "id": "62d40710-1f7d-4415-b7a0-40f069c4b035",
+        "last_modified": "2021-02-18T18:29:14.838117", "metadata_modified": "2019-11-07T18:52:34.576372",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2008-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 42, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/62d40710-1f7d-4415-b7a0-40f069c4b035/download/dados_2008.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:54:03.500404", "datastore_active": true, "description": "Ano
+        Base - 2008", "format": "XLSX", "hash": "", "id": "3ec318cd-6ab0-48f1-90c7-e60761c6a248",
+        "last_modified": "2021-02-18T18:29:47.355605", "metadata_modified": "2019-11-07T18:54:03.500404",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2008-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 43, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/3ec318cd-6ab0-48f1-90c7-e60761c6a248/download/dados_2008.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:55:32.993093", "datastore_active": true, "description": "Ano
+        Base - 2009", "format": "CSV", "hash": "", "id": "6606dc23-4a6b-4bc0-991c-4d29691ed307",
+        "last_modified": "2021-02-18T18:30:26.276335", "metadata_modified": "2019-11-07T18:55:32.993093",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2009-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 44, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/6606dc23-4a6b-4bc0-991c-4d29691ed307/download/dados_2009.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T18:57:07.574689", "datastore_active": true, "description": "Ano
+        Base - 2009", "format": "XLSX", "hash": "", "id": "30393e14-2914-4ef2-959b-2cecc8cd222b",
+        "last_modified": "2021-02-18T18:31:07.687326", "metadata_modified": "2019-11-07T18:57:07.574689",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2009-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 45, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/30393e14-2914-4ef2-959b-2cecc8cd222b/download/dados_2009.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T19:02:21.142262", "datastore_active": true, "description": "Ano
+        Base - 2010", "format": "CSV", "hash": "", "id": "859ea6a8-2967-4856-bd18-fdeaa7220ccb",
+        "last_modified": "2021-02-18T18:31:54.300186", "metadata_modified": "2019-11-07T19:02:21.142262",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2010-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 46, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/859ea6a8-2967-4856-bd18-fdeaa7220ccb/download/dados_2010.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T19:03:30.351444", "datastore_active": true, "description": "Ano
+        Base - 2010", "format": "XLSX", "hash": "", "id": "5c825e86-effe-41a6-9374-95331a9f587f",
+        "last_modified": "2021-02-18T18:32:28.360524", "metadata_modified": "2019-11-07T19:03:30.351444",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2010-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 47, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/5c825e86-effe-41a6-9374-95331a9f587f/download/dados_2010.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T19:04:49.086167", "datastore_active": true, "description": "Ano
+        Base - 2011", "format": "CSV", "hash": "", "id": "e37189cd-204c-43ad-8d8d-9ba3821336b0",
+        "last_modified": "2021-02-18T18:33:11.950325", "metadata_modified": "2019-11-07T19:04:49.086167",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2011-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 48, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/e37189cd-204c-43ad-8d8d-9ba3821336b0/download/dados_2011.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T19:06:20.123057", "datastore_active": true, "description": "Ano
+        Base - 2011", "format": "XLSX", "hash": "", "id": "281e670a-0d69-4700-8559-15f744913254",
+        "last_modified": "2021-02-18T18:33:46.433394", "metadata_modified": "2019-11-07T19:06:20.123057",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2011-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 49, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/281e670a-0d69-4700-8559-15f744913254/download/dados_2011.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T19:07:47.738062", "datastore_active": true, "description": "Ano
+        Base - 2012", "format": "CSV", "hash": "", "id": "14fe8b64-b861-42dc-92a2-be603e925e21",
+        "last_modified": "2021-02-18T18:34:36.996789", "metadata_modified": "2019-11-07T19:07:47.738062",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2012-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 50, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/14fe8b64-b861-42dc-92a2-be603e925e21/download/dados_2012.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-07T19:09:20.406568", "datastore_active": true, "description": "Ano
+        Base - 2012", "format": "XLSX", "hash": "", "id": "2047cb28-b937-4dce-86d1-aafd50c0f68a",
+        "last_modified": "2021-02-18T18:35:18.851249", "metadata_modified": "2019-11-07T19:09:20.406568",
+        "mimetype": null, "mimetype_inner": null, "name": "CAPES-BTD-2012-2019-11-01",
+        "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2", "position": 51, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/2047cb28-b937-4dce-86d1-aafd50c0f68a/download/dados_2012.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-29T17:33:57.131733", "datastore_active": true, "description": "",
+        "format": "PDF", "hash": "", "id": "8e83524a-297f-4244-89a0-477723e9f4f0",
+        "last_modified": "2021-02-18T17:54:30.398836", "metadata_modified": "2019-11-29T17:33:57.131733",
+        "mimetype": null, "mimetype_inner": null, "name": "Metadados Cat\u00e1logo
+        de Teses e Disserta\u00e7\u00f5es 1987 a 2012", "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2",
+        "position": 52, "resource_type": null, "size": null, "state": "active", "url":
+        "https://dadosabertos.capes.gov.br/dataset/b59bd607-7422-4b37-bedc-0e6c1b96bee2/resource/8e83524a-297f-4244-89a0-477723e9f4f0/download/metadados_catalogo_teses_dissertacoes_1987_2012.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2019-11-29T17:36:45.661014", "datastore_active": true, "description": "",
+        "format": "HTML", "hash": "", "id": "25386140-7a06-4bbb-b656-8b2f9cd9bc16",
+        "last_modified": null, "metadata_modified": "2019-11-29T17:36:45.661014",
+        "mimetype": null, "mimetype_inner": null, "name": "Link Metadados Cat\u00e1logo
+        de Teses e Disserta\u00e7\u00f5es 1987 a 2012", "package_id": "b59bd607-7422-4b37-bedc-0e6c1b96bee2",
+        "position": 53, "resource_type": null, "size": null, "state": "active", "url":
+        "https://metadados.capes.gov.br/index.php/catalog/181", "url_type": null}],
+        "tags": [{"display_name": "Disserta\u00e7\u00f5es", "id": "87438b97-049d-448e-817f-1aa2cbd22889",
+        "name": "Disserta\u00e7\u00f5es", "state": "active", "vocabulary_id": null},
+        {"display_name": "Educa\u00e7\u00e3o", "id": "317d8381-8fc1-4c55-a113-5f5d725e9e86",
+        "name": "Educa\u00e7\u00e3o", "state": "active", "vocabulary_id": null}, {"display_name":
+        "P\u00f3s-Gradua\u00e7\u00e3o", "id": "a011703e-3e8b-426b-97a5-8506339fe296",
+        "name": "P\u00f3s-Gradua\u00e7\u00e3o", "state": "active", "vocabulary_id":
+        null}, {"display_name": "Teses", "id": "a3dfeff0-3337-4c3d-8fc6-aee59f66e3de",
+        "name": "Teses", "state": "active", "vocabulary_id": null}], "relationships_as_subject":
+        [], "relationships_as_object": []}, {"author": "", "author_email": "", "creator_user_id":
+        "7fbacb25-45fb-4fbe-b0af-d096ae71912f", "id": "e1ff6f35-b1f1-49ba-b012-7b43f7ebfa47",
+        "isopen": true, "license_id": "cc-by", "license_title": "Creative Commons
+        Atribui\u00e7\u00e3o", "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "DPB", "maintainer_email": "OUVIDORIA@CAPES.GOV.BR", "metadata_created":
+        "2021-02-24T16:35:52.867200", "metadata_modified": "2024-12-03T11:44:06.781371",
+        "name": "2012-a-2016-custeio-e-capital-dos-programas-de-fomento-da-diretoria-de-programas-e-bolsas-no-pais",
+        "notes": "O conjunto de dados disponibilizado apresenta os valores de custeio
+        em reais concedidos pelos programas institucionais da Diretoria de Programas
+        e Bolsas no Pa\u00eds - DPB. \r\n\r\nEsta publica\u00e7\u00e3o apresenta os
+        dados dos anos de 2012 a 2016, conforme estabelecido no PDA 2020-2022.", "num_resources":
+        4, "num_tags": 0, "organization": {"id": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29",
+        "name": "bolsas-e-auxilios", "title": "Bolsas e Aux\u00edlios", "type": "organization",
+        "description": "A Capes concede bolsas de estudo/pesquisa e aux\u00edlios
+        para estudantes, professores e pesquisadores por meio dos seus programas e
+        a\u00e7\u00f5es. Dessa maneira, d\u00e1 suporte \u00e0 forma\u00e7\u00e3o
+        de profissionais para o magist\u00e9rio superior e para o desenvolvimento
+        cient\u00edfico e tecnol\u00f3gico nacional, promovendo, igualmente, a internacionaliza\u00e7\u00e3o
+        da ci\u00eancia, tecnologia e inova\u00e7\u00e3o brasileiras, com o apoio
+        a iniciativas individuais de mobilidade, bem como a coopera\u00e7\u00e3o entre
+        grupos e institui\u00e7\u00f5es de ensino e pesquisa.", "image_url": "", "created":
+        "2017-11-06T09:07:42.651838", "is_organization": true, "approval_status":
+        "approved", "state": "active"}, "owner_org": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29",
+        "private": false, "state": "active", "title": "[2012 a 2016] Custeio e Capital
+        dos Programas de Fomento PROAP e PROEX da Diretoria de Programas e Bolsas
+        no Pa\u00eds (DPB)", "type": "dataset", "url": "", "version": "1.0", "extras":
+        [{"key": "atualizacaoVersao", "value": "true"}, {"key": "coberturaEspacial",
+        "value": "FEDERAL"}, {"key": "coberturaTemporalFim", "value": "31/12/2016"},
+        {"key": "coberturaTemporalInicio", "value": "01/01/2012"}, {"key": "granularidadeEspacial",
+        "value": "ESTADUAL"}, {"key": "periodicidade", "value": "ANUAL"}], "groups":
+        [{"description": "Os conjuntos de dados disponibilizados neste grupo apresentam
+        os valores de custeio concedidos pelos programas institucionais da Diretoria
+        de Programas e Bolsas no Pa\u00eds - DPB.", "display_name": "Custeio dos Programas
+        de Fomento da Diretoria de Programas e Bolsas no Pa\u00eds", "id": "35a0b849-8e0e-4a1d-babf-8d1acd3b67b0",
+        "image_display_url": "", "name": "custeio-dos-programas-de-fomento-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "title": "Custeio dos Programas de Fomento da Diretoria de Programas e Bolsas
+        no Pa\u00eds"}, {"description": "Os conjuntos de dados disponibilizados neste
+        grupo apresentam os valores de custeio concedidos pelos programas institucionais
+        da Diretoria de Programas e Bolsas no Pa\u00eds - DPB.", "display_name": "Custeio
+        dos Programas de Fomento da Diretoria de Programas e Bolsas no Pa\u00eds",
+        "id": "35a0b849-8e0e-4a1d-babf-8d1acd3b67b0", "image_display_url": "", "name":
+        "custeio-dos-programas-de-fomento-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "title": "Custeio dos Programas de Fomento da Diretoria de Programas e Bolsas
+        no Pa\u00eds"}, {"description": "Educa\u00e7\u00e3o.", "display_name": "Educa\u00e7\u00e3o",
+        "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd", "image_display_url": "", "name":
+        "educacao", "title": "Educa\u00e7\u00e3o"}, {"description": "Pesquisa e Desenvolvimento.",
+        "display_name": "Pesquisa e Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695",
+        "image_display_url": "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa
+        e Desenvolvimento"}], "resources": [{"cache_last_updated": null, "cache_url":
+        null, "created": "2022-12-09T00:58:27.725479", "datastore_active": true, "description":
+        "Anos 2012 a 2016", "format": "CSV", "hash": "", "id": "f6cf4a0e-c43f-4b30-bfb6-c8aa58d67b17",
+        "last_modified": "2023-08-23T21:33:32.719288", "metadata_modified": "2023-08-23T21:33:32.752416",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "BR-CAPES-CUSTEIO-CAPITAL-PROGRAMAS-FOMENTO-DPB-2012A2016-2023-08-01",
+        "package_id": "e1ff6f35-b1f1-49ba-b012-7b43f7ebfa47", "position": 0, "resource_type":
+        null, "size": 3427663, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/e1ff6f35-b1f1-49ba-b012-7b43f7ebfa47/resource/f6cf4a0e-c43f-4b30-bfb6-c8aa58d67b17/download/br-capes-custeio-capital-programas-fomento-dpb-2012a2016-2023-08-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-09T00:31:58.424661", "datastore_active": true, "description": "Anos
+        2012 a 2016", "format": "XLSX", "hash": "", "id": "4c55f5e5-7560-4637-ac20-6c9feefa940d",
+        "last_modified": "2023-08-23T21:35:40.750046", "metadata_modified": "2023-08-23T21:35:40.777526",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "BR-CAPES-CUSTEIO-CAPITAL-PROGRAMAS-FOMENTO-DPB-2012A2016-2023-08-01",
+        "package_id": "e1ff6f35-b1f1-49ba-b012-7b43f7ebfa47", "position": 1, "resource_type":
+        null, "size": 948107, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/e1ff6f35-b1f1-49ba-b012-7b43f7ebfa47/resource/4c55f5e5-7560-4637-ac20-6c9feefa940d/download/br-capes-custeio-capital-programas-fomento-dpb-2012a2016-2023-08-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-10-29T23:11:48.736899", "datastore_active": false, "description": "Anos
+        2012 a 2016", "format": "PDF", "hash": "", "id": "7b454e6c-2408-4975-881e-2db6d2c4aaa1",
+        "last_modified": "2022-12-09T01:40:20.108630", "metadata_modified": "2023-08-23T21:33:32.753042",
+        "mimetype": null, "mimetype_inner": null, "name": "Metadados dos dados de
+        custeio e capital dos programas de fomento da DPB", "package_id": "e1ff6f35-b1f1-49ba-b012-7b43f7ebfa47",
+        "position": 2, "resource_type": null, "size": null, "state": "active", "url":
+        "https://dadosabertos.capes.gov.br/dataset/e1ff6f35-b1f1-49ba-b012-7b43f7ebfa47/resource/7b454e6c-2408-4975-881e-2db6d2c4aaa1/download/metadados_custeio_capital_programas_fomento_dpb_2012_2016.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2021-10-29T23:13:23.552478", "datastore_active": false, "description": "Anos
+        2012 a 2016", "format": "HTML", "hash": "", "id": "0505449a-129b-441f-b501-99a844f1dbbf",
+        "last_modified": "2022-11-14T19:13:20.334737", "metadata_modified": "2021-10-29T23:13:23.552478",
+        "mimetype": null, "mimetype_inner": null, "name": "Link para os metadados
+        dos dados de custeio e capital dos programas de fomento da DPB", "package_id":
+        "e1ff6f35-b1f1-49ba-b012-7b43f7ebfa47", "position": 3, "resource_type": null,
+        "size": null, "state": "active", "url": "https://metadados.capes.gov.br/index.php/catalog/247",
+        "url_type": ""}], "tags": [], "relationships_as_subject": [], "relationships_as_object":
+        []}, {"author": "", "author_email": "", "creator_user_id": "7fbacb25-45fb-4fbe-b0af-d096ae71912f",
+        "id": "91fb7acb-c72f-45e7-a0f3-8b1e8c9f86f0", "isopen": true, "license_id":
+        "cc-by", "license_title": "Creative Commons Atribui\u00e7\u00e3o", "license_url":
+        "http://www.opendefinition.org/licenses/cc-by", "maintainer": "DPB", "maintainer_email":
+        "OUVIDORIA@CAPES.GOV.BR", "metadata_created": "2023-03-10T18:59:56.412193",
+        "metadata_modified": "2024-12-11T13:37:59.824396", "name": "2022-a-2025-custeio-e-capital-dos-programas-de-fomento-proap-e-proex-da-dpb",
+        "notes": "O conjunto de dados disponibilizado apresenta os valores de custeio
+        em reais concedidos pelos programas institucionais da Diretoria de Programas
+        e Bolsas no Pa\u00eds - DPB.\r\n\r\nEsta publica\u00e7\u00e3o abrange os dados
+        dos anos de 2022 a 2025, sendo os dados disponibilizados atualmente referentes
+        ao ano de 2022. A disponibiliza\u00e7\u00e3o dos dados de 2023 a 2025 seguir\u00e1
+        o cronograma estabelecido no PDA 2024-2026.", "num_resources": 4, "num_tags":
+        4, "organization": {"id": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29", "name":
+        "bolsas-e-auxilios", "title": "Bolsas e Aux\u00edlios", "type": "organization",
+        "description": "A Capes concede bolsas de estudo/pesquisa e aux\u00edlios
+        para estudantes, professores e pesquisadores por meio dos seus programas e
+        a\u00e7\u00f5es. Dessa maneira, d\u00e1 suporte \u00e0 forma\u00e7\u00e3o
+        de profissionais para o magist\u00e9rio superior e para o desenvolvimento
+        cient\u00edfico e tecnol\u00f3gico nacional, promovendo, igualmente, a internacionaliza\u00e7\u00e3o
+        da ci\u00eancia, tecnologia e inova\u00e7\u00e3o brasileiras, com o apoio
+        a iniciativas individuais de mobilidade, bem como a coopera\u00e7\u00e3o entre
+        grupos e institui\u00e7\u00f5es de ensino e pesquisa.", "image_url": "", "created":
+        "2017-11-06T09:07:42.651838", "is_organization": true, "approval_status":
+        "approved", "state": "active"}, "owner_org": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29",
+        "private": false, "state": "active", "title": "[2022 a 2025] Custeio e Capital
+        dos Programas de Fomento PROAP e PROEX da Diretoria de Programas e Bolsas
+        no Pa\u00eds (DPB)", "type": "dataset", "url": "", "version": "1.0", "extras":
+        [{"key": "atualizacaoVersao", "value": "true"}, {"key": "coberturaEspacial",
+        "value": "FEDERAL"}, {"key": "coberturaTemporalFim", "value": "31/12/2025"},
+        {"key": "coberturaTemporalInicio", "value": "01/01/2022"}, {"key": "granularidadeEspacial",
+        "value": "ESTADUAL"}, {"key": "periodicidade", "value": "ANUAL"}], "groups":
+        [{"description": "Os conjuntos de dados disponibilizados neste grupo apresentam
+        os valores de custeio concedidos pelos programas institucionais da Diretoria
+        de Programas e Bolsas no Pa\u00eds - DPB.", "display_name": "Custeio dos Programas
+        de Fomento da Diretoria de Programas e Bolsas no Pa\u00eds", "id": "35a0b849-8e0e-4a1d-babf-8d1acd3b67b0",
+        "image_display_url": "", "name": "custeio-dos-programas-de-fomento-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "title": "Custeio dos Programas de Fomento da Diretoria de Programas e Bolsas
+        no Pa\u00eds"}, {"description": "Educa\u00e7\u00e3o.", "display_name": "Educa\u00e7\u00e3o",
+        "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd", "image_display_url": "", "name":
+        "educacao", "title": "Educa\u00e7\u00e3o"}, {"description": "Pesquisa e Desenvolvimento.",
+        "display_name": "Pesquisa e Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695",
+        "image_display_url": "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa
+        e Desenvolvimento"}], "resources": [{"cache_last_updated": null, "cache_url":
+        null, "created": "2023-03-24T16:01:38.811081", "datastore_active": true, "description":
+        "Ano 2022", "format": "CSV", "hash": "", "id": "b7d6e053-50c8-4182-bcfc-9f817f552d7d",
+        "last_modified": "2023-08-23T20:30:13.772629", "metadata_modified": "2023-08-23T20:30:13.807410",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "BR-CAPES-CUSTEIO-CAPITAL-PROGRAMAS-FOMENTO-DPB-2022-2023-08-01",
+        "package_id": "91fb7acb-c72f-45e7-a0f3-8b1e8c9f86f0", "position": 0, "resource_type":
+        null, "size": 801788, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/91fb7acb-c72f-45e7-a0f3-8b1e8c9f86f0/resource/b7d6e053-50c8-4182-bcfc-9f817f552d7d/download/br-capes-custeio-capital-programas-fomento-dpb-2022-2023-08-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-03-24T16:35:45.386372", "datastore_active": true, "description": "Ano
+        2022", "format": "XLSX", "hash": "", "id": "962bb901-32d4-4214-9145-a628767665e0",
+        "last_modified": "2023-08-23T21:10:48.384922", "metadata_modified": "2023-08-23T21:10:48.407551",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "BR-CAPES-CUSTEIO-CAPITAL-PROGRAMAS-FOMENTO-DPB-2022-2023-08-01",
+        "package_id": "91fb7acb-c72f-45e7-a0f3-8b1e8c9f86f0", "position": 1, "resource_type":
+        null, "size": 252933, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/91fb7acb-c72f-45e7-a0f3-8b1e8c9f86f0/resource/962bb901-32d4-4214-9145-a628767665e0/download/br-capes-custeio-capital-programas-fomento-dpb-2022-2023-08-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-03-10T19:03:02.988432", "datastore_active": false, "description": "Ano
+        2022", "format": "PDF", "hash": "", "id": "0a4fa482-be90-4830-bd89-bc71a504522d",
+        "last_modified": "2023-03-10T19:03:02.904788", "metadata_modified": "2023-03-10T19:04:00.174728",
+        "mimetype": "application/pdf", "mimetype_inner": null, "name": "Metadados
+        dos dados de custeio e capital dos programas de fomento da DPB", "package_id":
+        "91fb7acb-c72f-45e7-a0f3-8b1e8c9f86f0", "position": 2, "resource_type": null,
+        "size": 162247, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/91fb7acb-c72f-45e7-a0f3-8b1e8c9f86f0/resource/0a4fa482-be90-4830-bd89-bc71a504522d/download/metadados_custeio_capital_programas_fomento_dpb_2022.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-03-10T19:04:00.221487", "datastore_active": false, "description": "Ano
+        2022", "format": "HTML", "hash": "", "id": "1354ef2c-2c63-4eca-974f-f89cfc94151b",
+        "last_modified": null, "metadata_modified": "2024-08-20T15:22:53.178104",
+        "mimetype": null, "mimetype_inner": null, "name": "Metadados dos dados de
+        custeio e capital dos programas de fomento da DPB", "package_id": "91fb7acb-c72f-45e7-a0f3-8b1e8c9f86f0",
+        "position": 3, "resource_type": null, "size": null, "state": "active", "url":
+        "https://metadados.capes.gov.br/index.php/catalog/254", "url_type": null}],
+        "tags": [{"display_name": "CUSTEIO", "id": "973888ec-2dec-4501-b205-b37f6b897b3e",
+        "name": "CUSTEIO", "state": "active", "vocabulary_id": null}, {"display_name":
+        "Fomento", "id": "fd0ce298-e3b2-4483-a92f-69043c110133", "name": "Fomento",
+        "state": "active", "vocabulary_id": null}, {"display_name": "Programas Institucionais",
+        "id": "1911c93c-dc6f-4148-b1d8-7e9cd07525f5", "name": "Programas Institucionais",
+        "state": "active", "vocabulary_id": null}, {"display_name": "Programas de
+        P\u00f3s-Gradua\u00e7\u00e3o", "id": "5ab70170-1b07-44b8-9698-8e8203003f0d",
+        "name": "Programas de P\u00f3s-Gradua\u00e7\u00e3o", "state": "active", "vocabulary_id":
+        null}], "relationships_as_subject": [], "relationships_as_object": []}, {"author":
+        "", "author_email": "", "creator_user_id": "7fbacb25-45fb-4fbe-b0af-d096ae71912f",
+        "id": "0a03571e-2eaf-4877-a1d1-2c65541b4996", "isopen": true, "license_id":
+        "cc-by", "license_title": "Creative Commons Atribui\u00e7\u00e3o", "license_url":
+        "http://www.opendefinition.org/licenses/cc-by", "maintainer": "DPB", "maintainer_email":
+        "OUVIDORIA@CAPES.GOV.BR", "metadata_created": "2020-09-30T01:00:59.456612",
+        "metadata_modified": "2024-12-03T11:45:52.585434", "name": "2017-a-2021-custeio-e-capital-dos-programas-de-fomento-da-diretoria-de-programas-e-bolsas-no-pais",
+        "notes": "O conjunto de dados disponibilizado apresenta os valores de custeio
+        em reais concedidos pelos programas institucionais da Diretoria de Programas
+        e Bolsas no Pa\u00eds - DPB.\r\n\r\nEsta publica\u00e7\u00e3o apresenta os
+        dados dos anos de 2017 a 2021, conforme estabelecido no PDA 2020-2022.", "num_resources":
+        4, "num_tags": 4, "organization": {"id": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29",
+        "name": "bolsas-e-auxilios", "title": "Bolsas e Aux\u00edlios", "type": "organization",
+        "description": "A Capes concede bolsas de estudo/pesquisa e aux\u00edlios
+        para estudantes, professores e pesquisadores por meio dos seus programas e
+        a\u00e7\u00f5es. Dessa maneira, d\u00e1 suporte \u00e0 forma\u00e7\u00e3o
+        de profissionais para o magist\u00e9rio superior e para o desenvolvimento
+        cient\u00edfico e tecnol\u00f3gico nacional, promovendo, igualmente, a internacionaliza\u00e7\u00e3o
+        da ci\u00eancia, tecnologia e inova\u00e7\u00e3o brasileiras, com o apoio
+        a iniciativas individuais de mobilidade, bem como a coopera\u00e7\u00e3o entre
+        grupos e institui\u00e7\u00f5es de ensino e pesquisa.", "image_url": "", "created":
+        "2017-11-06T09:07:42.651838", "is_organization": true, "approval_status":
+        "approved", "state": "active"}, "owner_org": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29",
+        "private": false, "state": "active", "title": "[2017 a 2021] Custeio e Capital
+        dos Programas de Fomento PROAP e PROEX da Diretoria de Programas e Bolsas
+        no Pa\u00eds (DPB)", "type": "dataset", "url": "", "version": "1.0", "extras":
+        [{"key": "atualizacaoVersao", "value": "true"}, {"key": "coberturaEspacial",
+        "value": "FEDERAL"}, {"key": "coberturaTemporalFim", "value": "31/12/2021"},
+        {"key": "coberturaTemporalInicio", "value": "01/01/2017"}, {"key": "granularidadeEspacial",
+        "value": "ESTADUAL"}, {"key": "periodicidade", "value": "ANUAL"}], "groups":
+        [{"description": "Os conjuntos de dados disponibilizados neste grupo apresentam
+        os valores de custeio concedidos pelos programas institucionais da Diretoria
+        de Programas e Bolsas no Pa\u00eds - DPB.", "display_name": "Custeio dos Programas
+        de Fomento da Diretoria de Programas e Bolsas no Pa\u00eds", "id": "35a0b849-8e0e-4a1d-babf-8d1acd3b67b0",
+        "image_display_url": "", "name": "custeio-dos-programas-de-fomento-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "title": "Custeio dos Programas de Fomento da Diretoria de Programas e Bolsas
+        no Pa\u00eds"}, {"description": "Educa\u00e7\u00e3o.", "display_name": "Educa\u00e7\u00e3o",
+        "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd", "image_display_url": "", "name":
+        "educacao", "title": "Educa\u00e7\u00e3o"}, {"description": "Pesquisa e Desenvolvimento.",
+        "display_name": "Pesquisa e Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695",
+        "image_display_url": "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa
+        e Desenvolvimento"}], "resources": [{"cache_last_updated": null, "cache_url":
+        null, "created": "2022-12-09T00:56:38.118118", "datastore_active": true, "description":
+        "Anos 2017 a 2021", "format": "CSV", "hash": "", "id": "8f79cd1f-9014-45e9-95ce-bfc6059e3dc6",
+        "last_modified": "2023-08-23T21:23:12.088105", "metadata_modified": "2023-08-23T21:23:12.674962",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "BR-CAPES-CUSTEIO-CAPITAL-PROGRAMAS-FOMENTO-DPB-2017A2021-2023-08-01",
+        "package_id": "0a03571e-2eaf-4877-a1d1-2c65541b4996", "position": 0, "resource_type":
+        null, "size": 3788629, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/0a03571e-2eaf-4877-a1d1-2c65541b4996/resource/8f79cd1f-9014-45e9-95ce-bfc6059e3dc6/download/br-capes-custeio-capital-programas-fomento-dpb-2017a2021-2023-08-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-01T22:57:15.357255", "datastore_active": true, "description": "Anos
+        2017 a 2021", "format": "XLSX", "hash": "", "id": "b994aad0-356c-4dd9-935f-a13f2ff2825e",
+        "last_modified": "2023-08-23T21:24:19.608404", "metadata_modified": "2023-08-23T21:24:19.649328",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "BR-CAPES-CUSTEIO-CAPITAL-PROGRAMAS-FOMENTO-DPB-2017A2021-2023-08-01",
+        "package_id": "0a03571e-2eaf-4877-a1d1-2c65541b4996", "position": 1, "resource_type":
+        null, "size": 1051510, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/0a03571e-2eaf-4877-a1d1-2c65541b4996/resource/b994aad0-356c-4dd9-935f-a13f2ff2825e/download/br-capes-custeio-capital-programas-fomento-dpb-2017a2021-2023-08-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2020-09-30T01:16:48.504747", "datastore_active": false, "description": "Anos
+        2017 a 2021", "format": "PDF", "hash": "", "id": "52321685-0b5d-4192-89f7-aef956c333f2",
+        "last_modified": "2022-12-09T01:42:03.862535", "metadata_modified": "2023-08-23T21:23:12.675513",
+        "mimetype": null, "mimetype_inner": null, "name": "Metadados dos dados de
+        custeio e capital dos programas de fomento da DPB", "package_id": "0a03571e-2eaf-4877-a1d1-2c65541b4996",
+        "position": 2, "resource_type": null, "size": null, "state": "active", "url":
+        "https://dadosabertos.capes.gov.br/dataset/0a03571e-2eaf-4877-a1d1-2c65541b4996/resource/52321685-0b5d-4192-89f7-aef956c333f2/download/metadados_custeio_capital_programas_fomento_dpb_2017_2021.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2020-09-30T01:20:18.326541", "datastore_active": false, "description": "Anos
+        2017 a 2021", "format": "HTML", "hash": "", "id": "78660b62-4fc9-4a06-b6aa-546429ed696e",
+        "last_modified": null, "metadata_modified": "2020-09-30T01:20:18.326541",
+        "mimetype": null, "mimetype_inner": null, "name": "Link para os metadados
+        dos dados de custeio e capital dos programas de fomento da DPB", "package_id":
+        "0a03571e-2eaf-4877-a1d1-2c65541b4996", "position": 3, "resource_type": null,
+        "size": null, "state": "active", "url": "https://metadados.capes.gov.br/index.php/catalog/248",
+        "url_type": null}], "tags": [{"display_name": "Custeio", "id": "bababfd9-6177-459a-94de-b2d3b86e78dd",
+        "name": "Custeio", "state": "active", "vocabulary_id": null}, {"display_name":
+        "Fomento", "id": "fd0ce298-e3b2-4483-a92f-69043c110133", "name": "Fomento",
+        "state": "active", "vocabulary_id": null}, {"display_name": "Programas Institucionais",
+        "id": "1911c93c-dc6f-4148-b1d8-7e9cd07525f5", "name": "Programas Institucionais",
+        "state": "active", "vocabulary_id": null}, {"display_name": "Programas de
+        P\u00f3s-Gradua\u00e7\u00e3o", "id": "5ab70170-1b07-44b8-9698-8e8203003f0d",
+        "name": "Programas de P\u00f3s-Gradua\u00e7\u00e3o", "state": "active", "vocabulary_id":
+        null}], "relationships_as_subject": [], "relationships_as_object": []}, {"author":
+        "", "author_email": "", "creator_user_id": "7fbacb25-45fb-4fbe-b0af-d096ae71912f",
+        "id": "7a7f3f22-0484-4c89-8abf-530326cad349", "isopen": true, "license_id":
+        "cc-by", "license_title": "Creative Commons Atribui\u00e7\u00e3o", "license_url":
+        "http://www.opendefinition.org/licenses/cc-by", "maintainer": "DPB", "maintainer_email":
+        "OUVIDORIA@CAPES.GOV.BR", "metadata_created": "2023-04-17T17:32:43.385930",
+        "metadata_modified": "2024-12-11T13:36:59.530291", "name": "2022-a-2025-bolsistas-dos-programas-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "notes": "Os dados disponibilizados apresentam os bolsistas beneficiados por
+        programas da Diretoria de Programas e Bolsas no Pa\u00eds (DPB). A partir
+        deles, \u00e9 poss\u00edvel extrair informa\u00e7\u00f5es como n\u00famero
+        de bolsistas ativos por ano, programa, n\u00edvel da bolsa, Institui\u00e7\u00e3o
+        de Educa\u00e7\u00e3o Superior, entre outras.\r\n\r\nPara publica\u00e7\u00e3o,
+        os dados foram divididos em 3 planilhas distintas, como se segue:\r\n\r\n1)
+        BR-CAPES-DIVULG-INSTITUCIONAIS trata-se de uma vers\u00e3o somente com programas
+        da DPB com os seguintes fomentos: DS (o REDES est\u00e1 englobado neste programa),
+        PROEX, PROSUC, PROSUP, REUNI e PROF.\r\n\r\n2) BR-CAPES-DIVULG-QUALIFICACAO_DOCENTES
+        refere-se a uma vers\u00e3o contendo os programas de qualifica\u00e7\u00e3o
+        docentes que apresentam duas institui\u00e7\u00f5es envolvidas no fomento.
+        Neste sentido, este arquivo apresenta IES origem/receptora e IES destino/promotora.\r\n\r\n3)
+        BR-CAPES-DIVULG-ESTRATEGICOS refere-se aos demais programas de fomento com
+        exce\u00e7\u00e3o dos institucionais e de qualifica\u00e7\u00e3o docentes.\r\n\r\nEsta
+        publica\u00e7\u00e3o abrange os dados dos anos de 2022 a 2025, sendo os dados
+        disponibilizados atualmente referentes ao ano de 2022. A disponibiliza\u00e7\u00e3o
+        dos dados de 2023 a 2025 seguir\u00e1 o cronograma estabelecido no PDA 2024-2026.",
+        "num_resources": 8, "num_tags": 4, "organization": {"id": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29",
+        "name": "bolsas-e-auxilios", "title": "Bolsas e Aux\u00edlios", "type": "organization",
+        "description": "A Capes concede bolsas de estudo/pesquisa e aux\u00edlios
+        para estudantes, professores e pesquisadores por meio dos seus programas e
+        a\u00e7\u00f5es. Dessa maneira, d\u00e1 suporte \u00e0 forma\u00e7\u00e3o
+        de profissionais para o magist\u00e9rio superior e para o desenvolvimento
+        cient\u00edfico e tecnol\u00f3gico nacional, promovendo, igualmente, a internacionaliza\u00e7\u00e3o
+        da ci\u00eancia, tecnologia e inova\u00e7\u00e3o brasileiras, com o apoio
+        a iniciativas individuais de mobilidade, bem como a coopera\u00e7\u00e3o entre
+        grupos e institui\u00e7\u00f5es de ensino e pesquisa.", "image_url": "", "created":
+        "2017-11-06T09:07:42.651838", "is_organization": true, "approval_status":
+        "approved", "state": "active"}, "owner_org": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29",
+        "private": false, "state": "active", "title": "[2022 a 2025] Bolsistas dos
+        Programas da Diretoria de Programas e Bolsas no Pa\u00eds (DPB)", "type":
+        "dataset", "url": "", "version": "1.0", "extras": [{"key": "atualizacaoVersao",
+        "value": "true"}, {"key": "coberturaEspacial", "value": "FEDERAL"}, {"key":
+        "coberturaTemporalFim", "value": "31/12/2025"}, {"key": "coberturaTemporalInicio",
+        "value": "01/01/2022"}, {"key": "granularidadeEspacial", "value": "MUNICIPAL"},
+        {"key": "periodicidade", "value": "ANUAL"}], "groups": [{"description": "Os
+        dados a serem disponibilizados apresentam os bolsistas beneficiados por programas
+        da Diretoria de Programas e Bolsas no Pa\u00eds \u2013 DPB. A partir deles,
+        \u00e9 poss\u00edvel extrair informa\u00e7\u00f5es como n\u00famero de bolsistas
+        ativos por modalidade, g\u00eanero, ano, Institui\u00e7\u00e3o de Ensino Superior,
+        entre outras.", "display_name": "Bolsistas dos Programas da Diretoria de Programas
+        e Bolsas no Pa\u00eds (DPB)", "id": "f9ab723d-7091-4b94-96a6-fdddd994b5d5",
+        "image_display_url": "", "name": "bolsistas-dos-programas-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "title": "Bolsistas dos Programas da Diretoria de Programas e Bolsas no Pa\u00eds
+        (DPB)"}, {"description": "Educa\u00e7\u00e3o.", "display_name": "Educa\u00e7\u00e3o",
+        "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd", "image_display_url": "", "name":
+        "educacao", "title": "Educa\u00e7\u00e3o"}, {"description": "Pesquisa e Desenvolvimento.",
+        "display_name": "Pesquisa e Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695",
+        "image_display_url": "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa
+        e Desenvolvimento"}], "resources": [{"cache_last_updated": null, "cache_url":
+        null, "created": "2023-04-17T17:42:41.857622", "datastore_active": true, "description":
+        "Ano 2022", "format": "CSV", "hash": "", "id": "57457d2d-e69e-44b2-820a-5c4e47a8aef1",
+        "last_modified": "2023-04-17T21:40:09.121670", "metadata_modified": "2023-04-17T21:40:09.176544",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "BR-CAPES-DIVULG-INSTITUCIONAIS-2022-2023-04-01",
+        "package_id": "7a7f3f22-0484-4c89-8abf-530326cad349", "position": 0, "resource_type":
+        null, "size": 32650546, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/7a7f3f22-0484-4c89-8abf-530326cad349/resource/57457d2d-e69e-44b2-820a-5c4e47a8aef1/download/br-capes-divulg-institucionais-2022-2023-04-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-04-17T17:46:10.643558", "datastore_active": true, "description": "Ano
+        2022", "format": "XLSX", "hash": "", "id": "c1b12a60-1e8e-47d7-b1b7-b9d659a4e3fe",
+        "last_modified": "2023-04-17T21:40:58.456035", "metadata_modified": "2023-04-17T21:40:58.493090",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "BR-CAPES-DIVULG-INSTITUCIONAIS-2022-2023-04-01",
+        "package_id": "7a7f3f22-0484-4c89-8abf-530326cad349", "position": 1, "resource_type":
+        null, "size": 16659796, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/7a7f3f22-0484-4c89-8abf-530326cad349/resource/c1b12a60-1e8e-47d7-b1b7-b9d659a4e3fe/download/br-capes-divulg-institucionais-2022-2023-04-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-04-17T17:47:45.248973", "datastore_active": true, "description": "Ano
+        2022", "format": "CSV", "hash": "", "id": "b66a538c-bf1c-4008-88a3-ee59b5d934cc",
+        "last_modified": "2023-04-17T21:41:38.237286", "metadata_modified": "2023-04-17T21:41:38.274208",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "BR-CAPES-DIVULG-QUALIFICACAO-DOCENTES-2022-2023-04-01",
+        "package_id": "7a7f3f22-0484-4c89-8abf-530326cad349", "position": 2, "resource_type":
+        null, "size": 11065, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/7a7f3f22-0484-4c89-8abf-530326cad349/resource/b66a538c-bf1c-4008-88a3-ee59b5d934cc/download/br-capes-divulg-qualificacao-docentes-2022-2023-04-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-04-17T17:58:19.463563", "datastore_active": true, "description": "Ano
+        2022", "format": "XLSX", "hash": "", "id": "17ff2f93-d9e3-4845-a4de-0d881015d44a",
+        "last_modified": "2023-04-17T21:42:23.069328", "metadata_modified": "2023-04-17T21:42:23.121103",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "BR-CAPES-DIVULG-QUALIFICACAO-DOCENTES-2022-2023-04-01",
+        "package_id": "7a7f3f22-0484-4c89-8abf-530326cad349", "position": 3, "resource_type":
+        null, "size": 16725, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/7a7f3f22-0484-4c89-8abf-530326cad349/resource/17ff2f93-d9e3-4845-a4de-0d881015d44a/download/br-capes-divulg-qualificacao-docentes-2022-2023-04-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-04-17T17:49:11.041586", "datastore_active": true, "description": "Ano
+        2022", "format": "CSV", "hash": "", "id": "f02a5bbd-1654-4cd9-a6bf-d703e7d02a8b",
+        "last_modified": "2023-04-17T22:06:24.532100", "metadata_modified": "2023-04-17T22:06:24.567323",
+        "mimetype": "text/csv", "mimetype_inner": null, "name": "BR-CAPES-DIVULG-ESTRATEGICOS-2022-2023-04-01",
+        "package_id": "7a7f3f22-0484-4c89-8abf-530326cad349", "position": 4, "resource_type":
+        null, "size": 2232799, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/7a7f3f22-0484-4c89-8abf-530326cad349/resource/f02a5bbd-1654-4cd9-a6bf-d703e7d02a8b/download/br-capes-divulg-estrategicos-2022-2023-04-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-04-17T17:49:45.103760", "datastore_active": true, "description": "Ano
+        2022", "format": "XLSX", "hash": "", "id": "7795422d-864a-4190-8cf7-d3427e727202",
+        "last_modified": "2023-04-17T22:07:11.352432", "metadata_modified": "2023-04-17T22:07:11.395283",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "mimetype_inner": null, "name": "BR-CAPES-DIVULG-ESTRATEGICOS-2022-2023-04-01",
+        "package_id": "7a7f3f22-0484-4c89-8abf-530326cad349", "position": 5, "resource_type":
+        null, "size": 1139638, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/7a7f3f22-0484-4c89-8abf-530326cad349/resource/7795422d-864a-4190-8cf7-d3427e727202/download/br-capes-divulg-estrategicos-2022-2023-04-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-04-17T17:52:14.718483", "datastore_active": false, "description": "Ano
+        2022", "format": "PDF", "hash": "", "id": "768ffb04-3d37-4889-aea6-a54e412bb6a6",
+        "last_modified": "2023-04-17T17:52:14.611590", "metadata_modified": "2024-01-25T20:15:16.476646",
+        "mimetype": "application/pdf", "mimetype_inner": null, "name": "Metadados
+        dos dados de bolsistas dos programas da DPB", "package_id": "7a7f3f22-0484-4c89-8abf-530326cad349",
+        "position": 6, "resource_type": null, "size": 173147, "state": "active", "url":
+        "https://dadosabertos.capes.gov.br/dataset/7a7f3f22-0484-4c89-8abf-530326cad349/resource/768ffb04-3d37-4889-aea6-a54e412bb6a6/download/metadados_bolsistas_programas_dpb_2022.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2023-04-17T17:55:28.294972", "datastore_active": false, "description": "Ano
+        2022", "format": "HTML", "hash": "", "id": "204d1813-756b-4969-aacf-55d349e75309",
+        "last_modified": null, "metadata_modified": "2024-01-25T20:12:18.881437",
+        "mimetype": null, "mimetype_inner": null, "name": "Metadados dos dados de
+        bolsistas dos programas da DPB", "package_id": "7a7f3f22-0484-4c89-8abf-530326cad349",
+        "position": 7, "resource_type": null, "size": null, "state": "active", "url":
+        "https://metadados.capes.gov.br/index.php/catalog/257", "url_type": null}],
+        "tags": [{"display_name": "Aux\u00edlios", "id": "66484eba-a67a-4507-9b70-c0bf26dcfc0a",
+        "name": "Aux\u00edlios", "state": "active", "vocabulary_id": null}, {"display_name":
+        "Bolsas", "id": "05908328-3a86-45e9-85ee-cc39a084765f", "name": "Bolsas",
+        "state": "active", "vocabulary_id": null}, {"display_name": "Pagamento", "id":
+        "be5e5908-081c-443e-9e45-cbf53e55b699", "name": "Pagamento", "state": "active",
+        "vocabulary_id": null}, {"display_name": "Programas Institucionais", "id":
+        "1911c93c-dc6f-4148-b1d8-7e9cd07525f5", "name": "Programas Institucionais",
+        "state": "active", "vocabulary_id": null}], "relationships_as_subject": [],
+        "relationships_as_object": []}, {"author": "", "author_email": "", "creator_user_id":
+        "7fbacb25-45fb-4fbe-b0af-d096ae71912f", "id": "8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95",
+        "isopen": true, "license_id": "cc-by", "license_title": "Creative Commons
+        Atribui\u00e7\u00e3o", "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "DPB", "maintainer_email": "OUVIDORIA@CAPES.GOV.BR", "metadata_created":
+        "2020-10-28T01:32:57.149318", "metadata_modified": "2024-12-10T18:36:47.000641",
+        "name": "2010-a-2016-bolsistas-dos-programas-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "notes": "Os dados disponibilizados apresentam os bolsistas beneficiados por
+        programas da Diretoria de Programas e Bolsas no Pa\u00eds (DPB). A partir
+        deles, \u00e9 poss\u00edvel extrair informa\u00e7\u00f5es como n\u00famero
+        de bolsistas ativos por ano, programa, n\u00edvel da bolsa, Institui\u00e7\u00e3o
+        de Educa\u00e7\u00e3o Superior, entre outras.\r\n\r\nPara publica\u00e7\u00e3o,
+        os dados foram divididos em 3 planilhas distintas, como se segue:\r\n\r\n1)
+        BR-CAPES-DIVULG-INSTITUCIONAIS trata-se de uma vers\u00e3o somente com programas
+        da DPB com os seguintes fomentos: DS (o REDES est\u00e1 englobado neste programa),
+        PROEX, PROSUC, PROSUP, REUNI e PROF.\r\n\r\n2) BR-CAPES-DIVULG-QUALIFICACAO_DOCENTES
+        refere-se a uma vers\u00e3o contendo os programas de qualifica\u00e7\u00e3o
+        docentes que apresentam duas institui\u00e7\u00f5es envolvidas no fomento.
+        Neste sentido, este arquivo apresenta IES origem/receptora e IES destino/promotora.\r\n\r\n3)
+        BR-CAPES-DIVULG-ESTRATEGICOS refere-se aos demais programas de fomento com
+        exce\u00e7\u00e3o dos institucionais e de qualifica\u00e7\u00e3o docentes.\r\n\r\nEsta
+        publica\u00e7\u00e3o apresenta os dados dos anos de 2010 a 2016, conforme
+        estabelecido no PDA 2020-2022.", "num_resources": 8, "num_tags": 4, "organization":
+        {"id": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29", "name": "bolsas-e-auxilios",
+        "title": "Bolsas e Aux\u00edlios", "type": "organization", "description":
+        "A Capes concede bolsas de estudo/pesquisa e aux\u00edlios para estudantes,
+        professores e pesquisadores por meio dos seus programas e a\u00e7\u00f5es.
+        Dessa maneira, d\u00e1 suporte \u00e0 forma\u00e7\u00e3o de profissionais
+        para o magist\u00e9rio superior e para o desenvolvimento cient\u00edfico e
+        tecnol\u00f3gico nacional, promovendo, igualmente, a internacionaliza\u00e7\u00e3o
+        da ci\u00eancia, tecnologia e inova\u00e7\u00e3o brasileiras, com o apoio
+        a iniciativas individuais de mobilidade, bem como a coopera\u00e7\u00e3o entre
+        grupos e institui\u00e7\u00f5es de ensino e pesquisa.", "image_url": "", "created":
+        "2017-11-06T09:07:42.651838", "is_organization": true, "approval_status":
+        "approved", "state": "active"}, "owner_org": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29",
+        "private": false, "state": "active", "title": "[2010 a 2016] Bolsistas dos
+        Programas da Diretoria de Programas e Bolsas no Pa\u00eds (DPB)", "type":
+        "dataset", "url": "", "version": "1.0", "extras": [{"key": "atualizacaoVersao",
+        "value": "true"}, {"key": "coberturaEspacial", "value": "FEDERAL"}, {"key":
+        "coberturaTemporalFim", "value": "31/12/2016"}, {"key": "coberturaTemporalInicio",
+        "value": "01/01/2010"}, {"key": "granularidadeEspacial", "value": "MUNICIPAL"},
+        {"key": "periodicidade", "value": "ANUAL"}], "groups": [{"description": "Os
+        dados a serem disponibilizados apresentam os bolsistas beneficiados por programas
+        da Diretoria de Programas e Bolsas no Pa\u00eds \u2013 DPB. A partir deles,
+        \u00e9 poss\u00edvel extrair informa\u00e7\u00f5es como n\u00famero de bolsistas
+        ativos por modalidade, g\u00eanero, ano, Institui\u00e7\u00e3o de Ensino Superior,
+        entre outras.", "display_name": "Bolsistas dos Programas da Diretoria de Programas
+        e Bolsas no Pa\u00eds (DPB)", "id": "f9ab723d-7091-4b94-96a6-fdddd994b5d5",
+        "image_display_url": "", "name": "bolsistas-dos-programas-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "title": "Bolsistas dos Programas da Diretoria de Programas e Bolsas no Pa\u00eds
+        (DPB)"}, {"description": "Educa\u00e7\u00e3o.", "display_name": "Educa\u00e7\u00e3o",
+        "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd", "image_display_url": "", "name":
+        "educacao", "title": "Educa\u00e7\u00e3o"}, {"description": "Pesquisa e Desenvolvimento.",
+        "display_name": "Pesquisa e Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695",
+        "image_display_url": "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa
+        e Desenvolvimento"}], "resources": [{"cache_last_updated": null, "cache_url":
+        null, "created": "2022-12-13T23:30:22.257537", "datastore_active": true, "description":
+        "Anos 2010 a 2016", "format": "CSV", "hash": "", "id": "e2bd26a3-7f01-4bc3-ad8b-3e684e6f8ebd",
+        "last_modified": "2022-12-13T23:30:21.667146", "metadata_modified": "2023-05-11T21:58:40.971420",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-INSTITUCIONAIS-2010A2016-2022-12-01",
+        "package_id": "8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95", "position": 0, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95/resource/e2bd26a3-7f01-4bc3-ad8b-3e684e6f8ebd/download/br-capes-divulg-institucionais-2010a2016-2022-12-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-13T23:31:33.254490", "datastore_active": true, "description": "Anos
+        2010 a 2016", "format": "XLSX", "hash": "", "id": "22ee803c-afce-48e2-86ef-65398b85b941",
+        "last_modified": "2022-12-13T23:31:32.552239", "metadata_modified": "2023-05-11T21:58:40.971699",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-INSTITUCIONAIS-2010A2016-2022-12-01",
+        "package_id": "8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95", "position": 1, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95/resource/22ee803c-afce-48e2-86ef-65398b85b941/download/br-capes-divulg-institucionais-2010a2016-2022-12-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-17T00:24:51.597613", "datastore_active": true, "description": "Anos
+        2010 a 2016", "format": "CSV", "hash": "", "id": "e2970f11-11e8-4197-a859-3afa2c4758a9",
+        "last_modified": "2022-12-17T00:24:51.354791", "metadata_modified": "2023-05-11T21:58:40.971911",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-QUALIFICACAO-DOCENTES-2010A2016-2022-12-01",
+        "package_id": "8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95", "position": 2, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95/resource/e2970f11-11e8-4197-a859-3afa2c4758a9/download/br-capes-divulg-qualificacao-docentes-2010a2016-2022-12-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-17T00:26:49.586135", "datastore_active": true, "description": "Anos
+        2010 a 2016", "format": "XLSX", "hash": "", "id": "a0f14885-3ad2-4849-b833-e425ca14a07a",
+        "last_modified": "2022-12-17T00:26:49.387948", "metadata_modified": "2023-05-11T21:58:40.972119",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-QUALIFICACAO-DOCENTES-2010A2016-2022-12-01",
+        "package_id": "8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95", "position": 3, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95/resource/a0f14885-3ad2-4849-b833-e425ca14a07a/download/br-capes-divulg-qualificacao-docentes-2010a2016-2022-12-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-17T00:27:45.296714", "datastore_active": true, "description": "Anos
+        2010 a 2016", "format": "CSV", "hash": "", "id": "490a9dfc-b52e-49fc-beb6-f576a1e2d633",
+        "last_modified": "2022-12-17T00:27:44.984243", "metadata_modified": "2023-05-11T21:58:40.972411",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-ESTRATEGICOS-2010A2016-2022-12-01",
+        "package_id": "8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95", "position": 4, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95/resource/490a9dfc-b52e-49fc-beb6-f576a1e2d633/download/br-capes-divulg-estrategicos-2010a2016-2022-12-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-17T00:28:37.663645", "datastore_active": true, "description": "Anos
+        2010 a 2016", "format": "XLSX", "hash": "", "id": "ff378cbf-2e9d-4ff3-80ba-90cb2ba6b40e",
+        "last_modified": "2022-12-17T00:28:37.131747", "metadata_modified": "2023-05-11T21:58:40.972663",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-ESTRATEGICOS-2010A2016-2022-12-01",
+        "package_id": "8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95", "position": 5, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95/resource/ff378cbf-2e9d-4ff3-80ba-90cb2ba6b40e/download/br-capes-divulg-estrategicos-2010a2016-2022-12-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-11-14T15:40:30.324332", "datastore_active": false, "description": "Anos
+        2010 a 2016", "format": "PDF", "hash": "", "id": "d8dec2c6-fc56-4ee1-a05f-599594ce784c",
+        "last_modified": "2023-05-11T21:58:40.006155", "metadata_modified": "2023-05-11T21:58:40.972879",
+        "mimetype": "application/pdf", "mimetype_inner": null, "name": "Metadados
+        dos dados de bolsistas dos programas da DPB", "package_id": "8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95",
+        "position": 6, "resource_type": null, "size": 173503, "state": "active", "url":
+        "https://dadosabertos.capes.gov.br/dataset/8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95/resource/d8dec2c6-fc56-4ee1-a05f-599594ce784c/download/metadados_bolsistas_programas_dpb_2010_2016.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-11-14T16:31:13.543013", "datastore_active": false, "description": "Anos
+        2010 a 2016", "format": "HTML", "hash": "", "id": "5f46696e-f3d6-43f9-91c7-f275534cd5c3",
+        "last_modified": null, "metadata_modified": "2022-11-14T16:31:13.543013",
+        "mimetype": null, "mimetype_inner": null, "name": "Link para os metadados
+        dos dados de bolsistas dos programas da DPB", "package_id": "8258ff14-5dbf-4315-ad2d-ccb8dd6ffc95",
+        "position": 7, "resource_type": null, "size": null, "state": "active", "url":
+        "https://metadados.capes.gov.br/index.php/catalog/243", "url_type": null}],
+        "tags": [{"display_name": "Aux\u00edlios", "id": "66484eba-a67a-4507-9b70-c0bf26dcfc0a",
+        "name": "Aux\u00edlios", "state": "active", "vocabulary_id": null}, {"display_name":
+        "Bolsas", "id": "05908328-3a86-45e9-85ee-cc39a084765f", "name": "Bolsas",
+        "state": "active", "vocabulary_id": null}, {"display_name": "Pagamento", "id":
+        "be5e5908-081c-443e-9e45-cbf53e55b699", "name": "Pagamento", "state": "active",
+        "vocabulary_id": null}, {"display_name": "Programas Institucionais", "id":
+        "1911c93c-dc6f-4148-b1d8-7e9cd07525f5", "name": "Programas Institucionais",
+        "state": "active", "vocabulary_id": null}], "relationships_as_subject": [],
+        "relationships_as_object": []}, {"author": "", "author_email": "", "creator_user_id":
+        "7fbacb25-45fb-4fbe-b0af-d096ae71912f", "id": "80f47d91-8d95-4548-97ed-fef8ef3abf4d",
+        "isopen": true, "license_id": "cc-by", "license_title": "Creative Commons
+        Atribui\u00e7\u00e3o", "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "DPB", "maintainer_email": "OUVIDORIA@CAPES.GOV.BR", "metadata_created":
+        "2020-08-18T20:38:55.453411", "metadata_modified": "2024-12-10T18:28:03.948158",
+        "name": "2017-a-2021-bolsistas-dos-programas-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "notes": "Os dados disponibilizados apresentam os bolsistas beneficiados por
+        programas da Diretoria de Programas e Bolsas no Pa\u00eds (DPB). A partir
+        deles, \u00e9 poss\u00edvel extrair informa\u00e7\u00f5es como n\u00famero
+        de bolsistas ativos por ano, programa, n\u00edvel da bolsa, Institui\u00e7\u00e3o
+        de Educa\u00e7\u00e3o Superior, entre outras.\r\n\r\nPara publica\u00e7\u00e3o,
+        os dados foram divididos em 3 planilhas distintas, como se segue:\r\n\r\n1)
+        BR-CAPES-DIVULG-INSTITUCIONAIS trata-se de uma vers\u00e3o somente com programas
+        da DPB com os seguintes fomentos: DS (o REDES est\u00e1 englobado neste programa),
+        PROEX, PROSUC, PROSUP, REUNI e PROF.\r\n\r\n2) BR-CAPES-DIVULG-QUALIFICACAO_DOCENTES
+        refere-se a uma vers\u00e3o contendo os programas de qualifica\u00e7\u00e3o
+        docentes que apresentam duas institui\u00e7\u00f5es envolvidas no fomento.
+        Neste sentido, este arquivo apresenta IES origem/receptora e IES destino/promotora.\r\n\r\n3)
+        BR-CAPES-DIVULG-ESTRATEGICOS refere-se aos demais programas de fomento com
+        exce\u00e7\u00e3o dos institucionais e de qualifica\u00e7\u00e3o docentes.\r\n\r\nEsta
+        publica\u00e7\u00e3o apresenta os dados dos anos de 2017 a 2021, conforme
+        estabelecido no PDA 2020-2022.", "num_resources": 8, "num_tags": 4, "organization":
+        {"id": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29", "name": "bolsas-e-auxilios",
+        "title": "Bolsas e Aux\u00edlios", "type": "organization", "description":
+        "A Capes concede bolsas de estudo/pesquisa e aux\u00edlios para estudantes,
+        professores e pesquisadores por meio dos seus programas e a\u00e7\u00f5es.
+        Dessa maneira, d\u00e1 suporte \u00e0 forma\u00e7\u00e3o de profissionais
+        para o magist\u00e9rio superior e para o desenvolvimento cient\u00edfico e
+        tecnol\u00f3gico nacional, promovendo, igualmente, a internacionaliza\u00e7\u00e3o
+        da ci\u00eancia, tecnologia e inova\u00e7\u00e3o brasileiras, com o apoio
+        a iniciativas individuais de mobilidade, bem como a coopera\u00e7\u00e3o entre
+        grupos e institui\u00e7\u00f5es de ensino e pesquisa.", "image_url": "", "created":
+        "2017-11-06T09:07:42.651838", "is_organization": true, "approval_status":
+        "approved", "state": "active"}, "owner_org": "11b0c6b9-fe2e-4cb1-89a1-6e481a1c7b29",
+        "private": false, "state": "active", "title": "[2017 a 2021] Bolsistas dos
+        Programas da Diretoria de Programas e Bolsas no Pa\u00eds (DPB)", "type":
+        "dataset", "url": "", "version": "1.0", "extras": [{"key": "atualizacaoVersao",
+        "value": "true"}, {"key": "coberturaEspacial", "value": "FEDERAL"}, {"key":
+        "coberturaTemporalFim", "value": "31/12/2021"}, {"key": "coberturaTemporalInicio",
+        "value": "01/01/2017"}, {"key": "granularidadeEspacial", "value": "MUNICIPAL"},
+        {"key": "periodicidade", "value": "ANUAL"}], "groups": [{"description": "Os
+        dados a serem disponibilizados apresentam os bolsistas beneficiados por programas
+        da Diretoria de Programas e Bolsas no Pa\u00eds \u2013 DPB. A partir deles,
+        \u00e9 poss\u00edvel extrair informa\u00e7\u00f5es como n\u00famero de bolsistas
+        ativos por modalidade, g\u00eanero, ano, Institui\u00e7\u00e3o de Ensino Superior,
+        entre outras.", "display_name": "Bolsistas dos Programas da Diretoria de Programas
+        e Bolsas no Pa\u00eds (DPB)", "id": "f9ab723d-7091-4b94-96a6-fdddd994b5d5",
+        "image_display_url": "", "name": "bolsistas-dos-programas-da-diretoria-de-programas-e-bolsas-no-pais-dpb",
+        "title": "Bolsistas dos Programas da Diretoria de Programas e Bolsas no Pa\u00eds
+        (DPB)"}, {"description": "Educa\u00e7\u00e3o.", "display_name": "Educa\u00e7\u00e3o",
+        "id": "27e09d7d-1025-40b8-b5e5-fe2ef76ee5bd", "image_display_url": "", "name":
+        "educacao", "title": "Educa\u00e7\u00e3o"}, {"description": "Pesquisa e Desenvolvimento.",
+        "display_name": "Pesquisa e Desenvolvimento", "id": "96be5812-6837-46ec-91a6-82bf8f937695",
+        "image_display_url": "", "name": "pesquisa-e-desenvolvimento", "title": "Pesquisa
+        e Desenvolvimento"}], "resources": [{"cache_last_updated": null, "cache_url":
+        null, "created": "2022-12-14T01:26:31.884845", "datastore_active": true, "description":
+        "Anos 2017 a 2021", "format": "CSV", "hash": "", "id": "5d1a6882-6616-4c0e-bfed-729a284d501d",
+        "last_modified": "2022-12-14T01:26:31.531250", "metadata_modified": "2023-05-11T21:44:33.278185",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-INSTITUCIONAIS-2017A2021-2022-12-01",
+        "package_id": "80f47d91-8d95-4548-97ed-fef8ef3abf4d", "position": 0, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/80f47d91-8d95-4548-97ed-fef8ef3abf4d/resource/5d1a6882-6616-4c0e-bfed-729a284d501d/download/br-capes-divulg-institucionais-2017a2021-2022-12-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-14T01:27:32.386555", "datastore_active": true, "description": "Anos
+        2017 a 2021", "format": "XLSX", "hash": "", "id": "3d0691ba-ed9a-45be-95aa-9305cc63184e",
+        "last_modified": "2022-12-14T01:27:32.016027", "metadata_modified": "2023-05-11T21:44:33.278480",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-INSTITUCIONAIS-2017A2021-2022-12-01",
+        "package_id": "80f47d91-8d95-4548-97ed-fef8ef3abf4d", "position": 1, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/80f47d91-8d95-4548-97ed-fef8ef3abf4d/resource/3d0691ba-ed9a-45be-95aa-9305cc63184e/download/br-capes-divulg-institucionais-2017a2021-2022-12-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-17T00:32:11.059526", "datastore_active": true, "description": "Anos
+        2017 a 2021", "format": "CSV", "hash": "", "id": "6b82681e-0576-46f7-83a7-55270ea218ee",
+        "last_modified": "2022-12-17T00:32:10.751019", "metadata_modified": "2023-05-11T21:44:33.278743",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-QUALIFICACAO-DOCENTES-2017A2021-2022-12-01",
+        "package_id": "80f47d91-8d95-4548-97ed-fef8ef3abf4d", "position": 2, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/80f47d91-8d95-4548-97ed-fef8ef3abf4d/resource/6b82681e-0576-46f7-83a7-55270ea218ee/download/br-capes-divulg-qualificacao-docentes-2017a2021-2022-12-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-17T00:32:36.765999", "datastore_active": true, "description": "Anos
+        2017 a 2021", "format": "XLSX", "hash": "", "id": "764f4611-1351-447e-af09-5b4c4a972086",
+        "last_modified": "2022-12-17T00:32:36.569647", "metadata_modified": "2023-05-11T21:44:33.278954",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-QUALIFICACAO-DOCENTES-2017A2021-2022-12-01",
+        "package_id": "80f47d91-8d95-4548-97ed-fef8ef3abf4d", "position": 3, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/80f47d91-8d95-4548-97ed-fef8ef3abf4d/resource/764f4611-1351-447e-af09-5b4c4a972086/download/br-capes-divulg-qualificacao-docentes-2017a2021-2022-12-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-17T00:33:54.174744", "datastore_active": true, "description": "Anos
+        2017 a 2021", "format": "CSV", "hash": "", "id": "ff26bfce-8738-4069-9150-d7320eb3a6b9",
+        "last_modified": "2022-12-17T00:33:53.992315", "metadata_modified": "2023-05-11T21:44:33.279161",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-ESTRATEGICOS-2017A2021-2022-12-01",
+        "package_id": "80f47d91-8d95-4548-97ed-fef8ef3abf4d", "position": 4, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/80f47d91-8d95-4548-97ed-fef8ef3abf4d/resource/ff26bfce-8738-4069-9150-d7320eb3a6b9/download/br-capes-divulg-estrategicos-2017a2021-2022-12-01.csv",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-12-17T00:34:14.508720", "datastore_active": true, "description": "Anos
+        2017 a 2021", "format": "XLSX", "hash": "", "id": "229096b7-bf98-4d42-9bf0-aef015a9ff0f",
+        "last_modified": "2022-12-17T00:34:14.179493", "metadata_modified": "2023-05-11T21:44:33.279366",
+        "mimetype": null, "mimetype_inner": null, "name": "BR-CAPES-DIVULG-ESTRATEGICOS-2017A2021-2022-12-01",
+        "package_id": "80f47d91-8d95-4548-97ed-fef8ef3abf4d", "position": 5, "resource_type":
+        null, "size": null, "state": "active", "url": "https://dadosabertos.capes.gov.br/dataset/80f47d91-8d95-4548-97ed-fef8ef3abf4d/resource/229096b7-bf98-4d42-9bf0-aef015a9ff0f/download/br-capes-divulg-estrategicos-2017a2021-2022-12-01.xlsx",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-11-14T16:39:43.575561", "datastore_active": false, "description": "Anos
+        2017 a 2021", "format": "PDF", "hash": "", "id": "c33fc12b-bb9e-42b0-a008-3924d1da55ea",
+        "last_modified": "2023-05-11T21:44:33.185317", "metadata_modified": "2023-05-11T21:44:33.279625",
+        "mimetype": "application/pdf", "mimetype_inner": null, "name": "Metadados
+        dos dados de bolsistas dos programas da DPB", "package_id": "80f47d91-8d95-4548-97ed-fef8ef3abf4d",
+        "position": 6, "resource_type": null, "size": 173507, "state": "active", "url":
+        "https://dadosabertos.capes.gov.br/dataset/80f47d91-8d95-4548-97ed-fef8ef3abf4d/resource/c33fc12b-bb9e-42b0-a008-3924d1da55ea/download/metadados_bolsistas_programas_dpb_2017_2021.pdf",
+        "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created":
+        "2022-11-14T16:52:57.071772", "datastore_active": false, "description": "Anos
+        2017 a 2021", "format": "HTML", "hash": "", "id": "62de6ca2-54f1-4051-a963-750896a41ffd",
+        "last_modified": null, "metadata_modified": "2022-11-14T16:52:57.071772",
+        "mimetype": null, "mimetype_inner": null, "name": "Link para os metadados
+        dos dados de bolsistas dos programas da DPB", "package_id": "80f47d91-8d95-4548-97ed-fef8ef3abf4d",
+        "position": 7, "resource_type": null, "size": null, "state": "active", "url":
+        "https://metadados.capes.gov.br/index.php/catalog/244", "url_type": null}],
+        "tags": [{"display_name": "Aux\u00edlios", "id": "66484eba-a67a-4507-9b70-c0bf26dcfc0a",
+        "name": "Aux\u00edlios", "state": "active", "vocabulary_id": null}, {"display_name":
+        "Bolsas", "id": "05908328-3a86-45e9-85ee-cc39a084765f", "name": "Bolsas",
+        "state": "active", "vocabulary_id": null}, {"display_name": "Pagamento", "id":
+        "be5e5908-081c-443e-9e45-cbf53e55b699", "name": "Pagamento", "state": "active",
+        "vocabulary_id": null}, {"display_name": "Programas Institucionais", "id":
+        "1911c93c-dc6f-4148-b1d8-7e9cd07525f5", "name": "Programas Institucionais",
+        "state": "active", "vocabulary_id": null}], "relationships_as_subject": [],
+        "relationships_as_object": []}], "sort": "score desc, metadata_modified desc",
+        "search_facets": {}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      cache-control:
+      - public, max-age=0, must-revalidate
+      connection:
+      - keep-alive
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Thu, 12 Dec 2024 16:45:28 GMT
+      server:
+      - Werkzeug/1.0.0 Python/3.7.3
+      set-cookie:
+      - 4999160c32bb8b57799a047fbbe5f849=a60efbbc3dcb49980e97c942c8a1e9bc; path=/;
+        HttpOnly; Secure; SameSite=None
+      - CN_CAPES=!0yrnm41CsuILexYvdzInDfWncY4LrvUyb6lGrUxqyWZPqB/FTEKfb+KjqrKS7lHxywtf87Y/F1hiqMk=;
+        path=/; Httponly; Secure
+      - capesaaaaaaaaaaaaaaaa_session_=HACHIEIBMMAGJGPEMGEEPGHAKJELAAJNCHCJBFOJGEHLMAJILJCDGDAMKBPHIIICPFODCGJPGBOLPOLGDNPACNPMGBNBADAJLDLMIJFOOMJKNCPNLHCBKDOEENMNFFHI;
+        HttpOnly; secure;
+    status:
+      code: 200
+      message: OK
+version: 1
