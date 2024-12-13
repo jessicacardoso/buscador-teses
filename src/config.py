@@ -8,7 +8,6 @@ class Settings(BaseSettings):
     CHROMA_CLIENT_PORT: int
     CHROMA_CLIENT_AUTH_PROVIDER: str
 
-    DATA_FILE_PATH: str
     MODEL_NAME_OR_PATH: str = "all-MiniLM-L6-v2"
     DEVICE: str | None = None
 

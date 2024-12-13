@@ -1,15 +1,16 @@
 import hashlib
 
-import pandas as pd
-from sentence_transformers import SentenceTransformer
-from tqdm.auto import tqdm
-
 import chromadb
+import pandas as pd
 from chromadb import Documents, EmbeddingFunction, Embeddings
 from chromadb.config import Settings
 from chromadb.utils.batch_utils import create_batches
+from prefect import flow, task
+from prefect.cache_policies import INPUTS
+from sentence_transformers import SentenceTransformer
+from tqdm.auto import tqdm
 
-from .config import settings
+from config import settings
 
 
 class ThesisEmbeddingFunction(EmbeddingFunction):
@@ -38,6 +39,7 @@ class ThesisEmbeddingFunction(EmbeddingFunction):
         return self.model.encode(documents)
 
 
+@task
 def create_chroma_client(
     host: str, port: int, auth_provider: str, auth_credentials: str
 ) -> chromadb.HttpClient:
@@ -63,6 +65,7 @@ def create_chroma_client(
     )
 
 
+@task(cache_policy=None)
 def create_thesis_collection(
     client: chromadb.HttpClient,
 ) -> chromadb.Collection:
@@ -80,6 +83,11 @@ def create_thesis_collection(
     )
 
 
+@task(
+    name="Pré-processamento dos dados das teses",
+    description="Gera o identificador único para cada tese e seleciona colunas de interesse.",  # noqa
+    cache_policy=INPUTS,
+)
 def preprocess_thesis_data(file_path: str) -> pd.DataFrame:
     """Pré-processamento dos dados das teses.
 
@@ -91,6 +99,7 @@ def preprocess_thesis_data(file_path: str) -> pd.DataFrame:
         campo do resumo.
     """
 
+    print("Carregando dados...")
     df = pd.read_parquet(
         file_path,
         columns=[
@@ -108,8 +117,11 @@ def preprocess_thesis_data(file_path: str) -> pd.DataFrame:
             "DS_RESUMO",
         ],
     )
+    print("Removendo registros duplicados e valores nulos nos resumos...")
     df = df.drop_duplicates()
     df = df.dropna(subset=["DS_RESUMO"])
+
+    print("Gerando identificadores únicos...")
     df["id"] = df.apply(
         lambda x: hashlib.md5(
             "_".join([str(value) for value in x.values]).encode(),
@@ -120,6 +132,11 @@ def preprocess_thesis_data(file_path: str) -> pd.DataFrame:
     return df
 
 
+@task(
+    name="Adição de documentos à coleção",
+    description="Armazena os embeddings das teses no ChromaDB.",
+    cache_policy=None,
+)
 def add_documents_to_collection(
     chroma_client: chromadb.HttpClient,
     collection: chromadb.Collection,
@@ -149,7 +166,10 @@ def add_documents_to_collection(
         )
 
 
-def main():
+@flow(
+    name="Extração de embeddings das teses",
+)
+def main(file_path: str = "./data/catalogo_de_teses_e_dissertacoes") -> None:
     chroma_client = create_chroma_client(
         host=settings.CHROMA_CLIENT_HOSTNAME,
         port=settings.CHROMA_CLIENT_PORT,
@@ -160,7 +180,7 @@ def main():
     )
     collection = create_thesis_collection(client=chroma_client)
 
-    df = preprocess_thesis_data(file_path=settings.DATA_FILE_PATH)
+    df = preprocess_thesis_data(file_path=file_path)
 
     ids = df["id"].tolist()
     documents = df["DS_RESUMO"].tolist()
