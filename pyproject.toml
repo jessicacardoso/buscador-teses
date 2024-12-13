@@ -11,6 +11,7 @@ dependencies = [
     "pandas>=2.2.3",
     "prefect>=3.1.6",
     "pyarrow>=18.1.0",
+    "pydantic-settings>=2.6.1",
     "requests>=2.32.3",
     "sentence-transformers>=3.3.1",
     "tenacity>=9.0.0",
