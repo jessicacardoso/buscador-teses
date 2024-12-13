@@ -2,10 +2,13 @@
 CAPES a partir de 2013."""
 
 import datetime
+import os
 from pathlib import Path
 
+import boto3
 import pandas as pd
 import requests
+import smart_open as so
 from prefect import flow, task
 from prefect.cache_policies import INPUTS
 from prefect.runtime import flow_run, task_run
@@ -149,13 +152,15 @@ def download(
     Returns:
         str: caminho do arquivo baixado
     """
-    Path(output_dir).mkdir(parents=True, exist_ok=True)
-    filename = Path(output_dir) / url.split("/")[-1]
+    if not output_dir.startswith("s3://"):
+        os.makedirs(output_dir, exist_ok=True)
+
+    filename = os.path.join(output_dir, url.split("/")[-1])
 
     response_headers = requests.head(url, timeout=TIMEOUT).headers
     total = int(response_headers.get("content-length", 0))
 
-    with open(filename, "wb") as f:
+    with so.open(filename, "wb") as f:
         with requests.get(
             url, stream=True, headers=HEADERS, timeout=TIMEOUT
         ) as r:
@@ -177,6 +182,36 @@ def download(
     return str(filename)
 
 
+def list_files(directory_or_bucket: str, extension: str = ".xlsx") -> list:
+    """Lista arquivos de um diretório local ou de um bucket S3 com a
+    extensão fornecida.
+
+    Args:
+        directory_or_bucket (str): Caminho do diretório local ou nome do
+        caminho do bucket.
+        extension (str, optional): Extensão dos arquivos a serem listados
+        (padrão é '.xlsx').
+
+    Returns:
+        list: Lista de arquivos encontrados.
+    """
+    if Path(directory_or_bucket).is_dir():
+        files = list(Path(directory_or_bucket).glob(f"*{extension}"))
+        return [file.as_posix() for file in files]
+    elif directory_or_bucket.startswith("s3://"):
+        s3_client = boto3.client("s3")
+        bucket_name = directory_or_bucket.split("/")[2]
+        response = s3_client.list_objects_v2(
+            Bucket=bucket_name, Prefix="data/raw/"
+        )
+        files = [
+            f"s3://{bucket_name}/{content['Key']}"
+            for content in response.get("Contents", [])
+            if content["Key"].endswith(extension)
+        ]
+        return files
+
+
 @task(
     name="Carregar e processar dados",
     description="Unir os catálogos de teses e dissertações e salvar em parquet.",  # noqa
@@ -188,8 +223,8 @@ def load_and_process_data(output_dir: str = "./data") -> None:
     Args:
         output_dir (str, optional): diretório dos dados. Defaults to "data".
     """
-    output_dir = Path(output_dir)
-    files = list(output_dir.glob("*.xlsx"))
+    files = list_files(output_dir) or []
+    print(files)
     dfs = []
 
     print("Carregando catálogos de teses e dissertações...")
@@ -215,7 +250,9 @@ def load_and_process_data(output_dir: str = "./data") -> None:
 
     print("Salvando em parquet...")
     df = df.drop_duplicates()
-    df.to_parquet(output_dir / "catalogo_de_teses_e_dissertacoes.parquet")
+    df.to_parquet(
+        os.path.join(output_dir, "catalogo_de_teses_e_dissertacoes.parquet")
+    )
 
 
 @flow(

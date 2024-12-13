@@ -93,8 +93,8 @@ def test_get_resource_etag(mock_head):
 
 @patch("src.download.requests.get")
 @patch("src.download.requests.head")
-@patch("src.download.Path.mkdir")
-@patch("src.download.open")
+@patch("src.download.os.makedirs")
+@patch("src.download.so.open")
 def test_download(mock_head, mock_get, mock_mkdir, mock_open):
     mock_head.return_value.headers = {"content-length": "1024"}
     mock_response = MagicMock()
@@ -109,12 +109,13 @@ def test_download(mock_head, mock_get, mock_mkdir, mock_open):
     result = download.fn(
         "http://example.com/file.xlsx", output_dir="./test_data"
     )
-    assert result == "test_data/file.xlsx"
+    assert result == "./test_data/file.xlsx"
 
 
+@patch("src.download.pd.read_excel")
 @patch("src.download.pd.concat")
 @patch("src.download.pd.DataFrame.to_parquet")
-def test_load_and_process_data(mock_concat, mock_to_parquet):
+def test_load_and_process_data(mock_to_parquet, mock_concat, mock_read_excel):
     data = [
         {
             "AN_BASE": 2013,
@@ -140,6 +141,7 @@ def test_load_and_process_data(mock_concat, mock_to_parquet):
     df = pd.DataFrame(data)
     mock_concat.return_value = df
     mock_to_parquet.return_value = df
+    mock_read_excel.return_value = df
 
     load_and_process_data.fn(output_dir="./test_data")
 

@@ -13,7 +13,10 @@ class Settings(BaseSettings):
     DEVICE: str | None = None
 
     model_config = SettingsConfigDict(
-        env_file=".env", case_sensitive=True, env_file_encoding="utf-8"
+        env_file=".env",
+        case_sensitive=True,
+        env_file_encoding="utf-8",
+        extra="ignore",
     )
 
 
