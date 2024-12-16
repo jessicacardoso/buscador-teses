@@ -10,7 +10,7 @@ from prefect.cache_policies import INPUTS
 from sentence_transformers import SentenceTransformer
 from tqdm.auto import tqdm
 
-from config import settings
+from src.config import settings
 
 
 class ThesisEmbeddingFunction(EmbeddingFunction):
