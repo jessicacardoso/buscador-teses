@@ -4,5 +4,5 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
-    "python.analysis.autoImportCompletions": false
+    "python.defaultInterpreterPath": "./venv/bin/python"
 }

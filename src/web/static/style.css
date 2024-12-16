@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.block-container {
+    padding: 0 5rem;
+}
+
+footer {
+    display: none
+}
+
+[data-testid="stHeader"] {
+    display: none
+}
+
+[data-testid="stAppViewContainer"] > .main {
+    background-color: #F7F7F7;
+}
+
+[data-testid="stSidebarContent"] {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-testid="stSidebarUserContent"]  button[kind="primary"] {
+    background-color: #004A71;
+    border: 1px solid #003A54;
+}
+
+[data-testid="stSidebarUserContent"]  button[kind="secondary"]:hover {
+    color: #003A54;
+    border: 1px solid #003A54;
+}
+
+.block-container {
+    padding: 0 5rem;
+}
+
+.highlighted {
+    color: #004A71;
+}
+
+.sidebar_title, .sidebar_subtitle, .submenu {
+    color: black !important;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.dashboard_logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    min-width: 150px;
+}
+
+/* Estilos para a página inicial */
+.home_container {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.home_container p, .home_container li{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.home_container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home_container ul {
+    padding-left: 20px;
+}
+
+.home_container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+[data-testid="stTextInputRootElement"] {
+    height: 4em;
+}
+
+[data-testid="stTextInput"] {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+[data-testid="stTextInput"] p{
+    color: #0e0e0f;
+}
+
+
+[data-testid="stBaseButton-tertiary"]{
+    background-color: #115909;
+    border: 1px solid #115909;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+.stElementContainer.element-container.st-emotion-cache-v32dg4.eiemyj1 {
+    width: 90%;
+    margin: 0 auto;
+}
