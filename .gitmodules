@@ -1,0 +1,3 @@
+[submodule "instructor_embedding"]
+	path = instructor_embedding
+	url = https://github.com/jessicacardoso/instructor-embedding.git

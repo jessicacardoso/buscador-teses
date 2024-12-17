@@ -2,14 +2,14 @@ import hashlib
 
 import chromadb
 import pandas as pd
-from chromadb import Documents, EmbeddingFunction, Embeddings
-from chromadb.config import Settings
+from chromadb import Documents, EmbeddingFunction, Embeddings, Settings
 from chromadb.utils.batch_utils import create_batches
 from prefect import flow, task
 from prefect.cache_policies import INPUTS
 from sentence_transformers import SentenceTransformer
 from tqdm.auto import tqdm
 
+from instructor_embedding import INSTRUCTOR
 from src.config import settings
 
 
@@ -39,9 +39,41 @@ class ThesisEmbeddingFunction(EmbeddingFunction):
         return self.model.encode(documents)
 
 
+class ThesisEmbeddingInstructorFunction(EmbeddingFunction):
+    """Extração de embeddings dos resumos das teses.
+
+    Esta classe é responsável por extrair os embeddings dos resumos das teses
+    utilizando um modelo de linguagem pré-treinado.
+    """
+
+    def __init__(self) -> None:
+        self.model = INSTRUCTOR("models/instructor")
+
+    def __call__(self, documents: Documents) -> Embeddings:
+        """Recebe uma lista de documentos e retorna os embeddings.
+
+        Args:
+            documents (Documents): Uma lista de documentos, no caso, os
+            resumos das teses.
+
+        Returns:
+            Uma lista de embeddings correspondentes aos documentos.
+        """
+        documents = [doc.lower() for doc in documents]
+        prompt = ["Represente a pergunta para recuperar o resumo;", ""]
+        docs = [[prompt[0], doc] for doc in documents]
+        embs = self.model.encode(docs)
+
+        return embs
+
+
 @task
 def create_chroma_client(
-    host: str, port: int, auth_provider: str, auth_credentials: str
+    host: str,
+    port: int,
+    auth_provider: str,
+    auth_credentials: str,
+    chromadb_name: str = "default",
 ) -> chromadb.HttpClient:
     """Crie um cliente ChromaDB.
 
@@ -54,20 +86,27 @@ def create_chroma_client(
     Returns:
         Uma instância de `chromadb.HttpClient` definida com as configurações
     """
-
-    return chromadb.HttpClient(
-        host=host,
-        port=port,
-        settings=Settings(
-            chroma_client_auth_provider=auth_provider,
-            chroma_client_auth_credentials=auth_credentials,
-        ),
-    )
+    if chromadb_name == "default":
+        print("Creating ChromaDB client...")
+        return chromadb.HttpClient(
+            host=host,
+            port=port,
+            settings=Settings(
+                chroma_client_auth_provider=auth_provider,
+                chroma_client_auth_credentials=auth_credentials,
+            ),
+        )
+    elif chromadb_name == "instructor":
+        print("Creating ChromaDB instructor client...")
+        return chromadb.PersistentClient(
+            "data/chromadb_instructor/chroma_data"
+        )
 
 
 @task(cache_policy=None)
 def create_thesis_collection(
     client: chromadb.HttpClient,
+    chromadb_name: str = "default",
 ) -> chromadb.Collection:
     """Cria uma coleção no ChromaDB para armazenar os embeddings das teses.
 
@@ -77,10 +116,15 @@ def create_thesis_collection(
     Returns:
         Uma instância de `chromadb.Collection`.
     """
-
-    return client.get_or_create_collection(
-        name="thesis_capes", embedding_function=ThesisEmbeddingFunction()
-    )
+    if chromadb_name == "default":
+        return client.get_or_create_collection(
+            name="thesis_capes", embedding_function=ThesisEmbeddingFunction()
+        )
+    elif chromadb_name == "instructor":
+        return client.get_or_create_collection(
+            name="thesis_capes",
+            embedding_function=ThesisEmbeddingInstructorFunction(),
+        )
 
 
 @task(

@@ -1,11 +1,26 @@
+import json
+
+import pandas as pd
 import streamlit as st
 from chromadb.api.models.Collection import Collection
+from openai import OpenAI
 
 from src.config import settings
 from src.extract_embeddings import (
     create_chroma_client,
     create_thesis_collection,
 )
+
+
+@st.cache_resource
+def load_prompts() -> tuple[str, str]:
+    with open("src/assets/prompt-text-to-chroma.txt", encoding="utf-8") as f:
+        prompt_chroma = f.read()
+
+    with open("src/assets/prompt-rag.txt", encoding="utf-8") as f:
+        prompt_rag = f.read()
+
+    return prompt_chroma, prompt_rag
 
 
 @st.cache_resource
@@ -22,43 +37,49 @@ def load_collection():
         auth_credentials=(
             settings.CHROMA_CLIENT_AUTH_CREDENTIALS.get_secret_value()
         ),
+        chromadb_name="instructor",
     )
-    collection = create_thesis_collection.fn(client)
+    collection = create_thesis_collection.fn(
+        client, chromadb_name="instructor"
+    )
     return collection
 
 
-def search_documents(query: str, collection: Collection) -> dict:
+def search_documents(
+    collection: Collection,
+    query: str,
+    where: dict = None,
+    n_results=20,
+) -> list[dict]:
     """Realiza uma busca na coleção de documentos.
 
     Args:
-        query (str): Texto da consulta.
         collection (Collection): Objeto da coleção de documentos.
+        query (str): Texto da consulta.
+        where (dict, optional): Filtros da consulta. Defaults to None.
+        n_results (int, optional): Número de resultados. Defaults to 20.
     """
-    return collection.query(
-        query_texts=[query],
-        n_results=5,
+    try:
+        results = collection.query(
+            query_texts=[query],
+            where=where,
+            n_results=n_results,
+        )
+        return [item for items in results["metadatas"] for item in items]
+    except ValueError:
+        return []
+
+
+def get_agent_response(text: str, prompt: str, client: OpenAI) -> dict:
+    completion = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "system", "content": prompt},
+            {"role": "user", "content": text},
+        ],
+        response_format={"type": "json_object"},
     )
-
-
-def ask(text: str, collection: Collection):
-    """Realiza uma pergunta ao sistema.
-
-    Args:
-        text (str): Texto da pergunta.
-        collection (Collection): Coleção de documentos.
-    """
-    result = search_documents(text, collection)
-    ids = result.get("ids", [])
-    metadatas = result.get("metadatas", [])
-
-    ids = ids[0] if ids else []
-    metadatas = metadatas[0] if metadatas else []
-
-    return {
-        "text": text,
-        "answer": "Esses foram os documentos encontrados:",
-        "documents": metadatas,
-    }
+    return json.loads(completion.choices[0].message.content)
 
 
 def main():
@@ -74,10 +95,55 @@ def main():
         unsafe_allow_html=True,
     )
 
+    client = OpenAI()
     collection = load_collection()
+
+    prompt_chroma, prompt_rag = load_prompts()
     search = st.text_input("Faça uma consulta:")
 
     if st.button("🔍 Buscar", type="tertiary") and search.strip():
-        result = ask(search, collection)
-        st.write(result["answer"])
-        st.write(result["documents"])
+        with st.spinner("Montando consulta..."):
+            chroma_query = get_agent_response(search, prompt_chroma, client)
+        with st.spinner("Recuperando dados..."):
+            results = search_documents(collection, **chroma_query)
+            final_query = f"""
+            - Query: {search}
+            - Documents:
+            {results}
+            """
+            response = get_agent_response(final_query, prompt_rag, client)
+
+        answer = response.get(
+            "answer", "Não foi possível encontrar uma resposta."
+        )
+        ids = response.get("ids", [])
+
+        df = pd.DataFrame(results)
+        df = df[df["id"].isin(ids)][
+            [
+                "AN_BASE",
+                "NM_PRODUCAO",
+                "DS_RESUMO",
+                "NM_AREA_CONHECIMENTO",
+                "NM_GRANDE_AREA_CONHECIMENTO",
+                "NM_GRAU_ACADEMICO",
+                "SG_ENTIDADE_ENSINO",
+                "SG_UF_IES",
+            ]
+        ]
+
+        df = df.rename(
+            columns={
+                "AN_BASE": "Ano",
+                "NM_PRODUCAO": "Título",
+                "DS_RESUMO": "Resumo",
+                "NM_AREA_CONHECIMENTO": "Área de Conhecimento",
+                "NM_GRANDE_AREA_CONHECIMENTO": "Grande Área de Conhecimento",
+                "NM_GRAU_ACADEMICO": "Grau Acadêmico",
+                "SG_ENTIDADE_ENSINO": "Sigla da Instituição",
+                "SG_UF_IES": "Sigla do Estado da Instituição",
+            }
+        )
+
+        st.write(answer)
+        st.write(df)

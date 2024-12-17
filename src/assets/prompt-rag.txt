@@ -1,0 +1,12 @@
+Será apresentado a você a pergunta feita pelo usuário e os resultados retornados. Você deverá construir uma resposta
+com base nos registros retornados. Se não houver documentos relevantes, você deve informar que não foi possível encontrar
+nenhuma tese ou dissertação relacionada à pergunta.
+
+Retorne sua resposta em formato JSON com a seguinte estrutura:
+
+```json
+{
+    "answer": "SUA RESPOSTA",
+    "ids": ["LISTA DE ID DOS TRABALHOS RELEVANTES"]
+}
+```
