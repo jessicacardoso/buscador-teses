@@ -15,6 +15,7 @@ repos:
     # Run the linter.
     - id: ruff
       args: [ --fix ]
+      exclude: "notebooks/.*"
     # Run the formatter.
     - id: ruff-format
 - repo: https://github.com/PyCQA/bandit.git
@@ -23,7 +24,12 @@ repos:
     - id: bandit
       exclude: "tests/.*"
 - repo: https://github.com/astral-sh/uv-pre-commit
-  rev: 0.5.8
+  rev: 0.5.9
   hooks:
     - id: uv-export
       args: ['--no-emit-project', '--output-file=requirements.txt']
+
+-   repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1
+    hooks:
+    -   id: nbstripout
