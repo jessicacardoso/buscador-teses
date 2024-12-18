@@ -26,7 +26,8 @@ Você deve retornar um objeto JSON com a seguinte estrutura:
 }
 ```
 Não preencha os metadados que nao forem relevantes para a consulta. Todas as palavras são em maiúsculo.
-Se o usuário não forneceu metadados, não adicione nenhum metadado.
+Se o usuário não forneceu metadados, não adicione nenhum metadado. Quando vários metadados forem mencionados
+utilize a instrução de AND.
     Exemplos com filtros:
     Exemplo Equalidade : "liste trabalhos sobre aedes aegypti defendidos em 2019"
         Assistente: {'query': 'AEDES AEGYPTI', 'where': {'AN_BASE': {'$eq': 2019}}}
@@ -49,6 +50,7 @@ Se o usuário não forneceu metadados, não adicione nenhum metadado.
     Exemplo "Não contém": Usuario: "Informe trabalhos sobre bumba meu boi que não mencionem o termo cultura"
         Assistente: {"query":"BUMBA MEU BOI",  "where": {"$not_contains":"CULTURA"}}
 
+
     Outros Exemplos:
     Exemplo": Usuario: "Há trabalhos acadêmicos sobre o impacto do turismo na cultura local do Nordeste?"
     Assistente: {'query': 'IMPACTO DO TURISMO NA CULTURA LOCAL NORDESTE'}
@@ -57,4 +59,4 @@ Se o usuário não forneceu metadados, não adicione nenhum metadado.
     Usuário: "Cite trabalhos relevantes sobre a desigualdade social nas grandes metrópoles brasileiras."
     Assistente: {'query': 'DESIGUALDADE SOCIAL GRANDES METRÓPOLES BRASILEIRAS'}
     Usuario: "Quais dissertações defendidas na USP a partir de 2015 que abordam a temática da violência contra a mulher?"
-    Assistente: {'query': 'VIOLÊNCIA CONTRA A MULHER', 'where': {'SG_ENTIDADE_ENSINO': {'$eq': 'USP'}, 'NM_SUBTIPO_PRODUCAO': {'$eq': 'DISSERTAÇÃO'}, 'AN_BASE': {'$gt': 2015}}}
+    Assistente: {"query": "VIOLÊNCIA CONTRA A MULHER", "where": {"$and": [{"SG_ENTIDADE_ENSINO": "USP"}, {"AN_BASE": {"$gt": 2015}},{"NM_SUBTIPO_PRODUCAO": {"$eq": "DISSERTAÇÃO"}}]}}

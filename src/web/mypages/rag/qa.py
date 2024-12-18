@@ -1,4 +1,6 @@
+import datetime as dt
 import json
+from functools import wraps
 
 import pandas as pd
 import streamlit as st
@@ -12,8 +14,19 @@ from src.extract_embeddings import (
 )
 
 
-@st.cache_resource
-def load_prompts() -> tuple[str, str]:
+def log_step(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        tic = dt.datetime.now()
+        result = func(*args, **kwargs)
+        time_taken = str(dt.datetime.now() - tic)
+        print(f"just ran step {func.__name__} took {time_taken}s")
+        return result
+
+    return wrapper
+
+
+def load_prompts():
     with open("src/assets/prompt-text-to-chroma.txt", encoding="utf-8") as f:
         prompt_chroma = f.read()
 
@@ -21,6 +34,11 @@ def load_prompts() -> tuple[str, str]:
         prompt_rag = f.read()
 
     return prompt_chroma, prompt_rag
+
+
+@st.cache_resource
+def load_prompts_with_cache() -> tuple[str, str]:
+    return load_prompts()
 
 
 @st.cache_resource
@@ -45,6 +63,7 @@ def load_collection():
     return collection
 
 
+@log_step
 def search_documents(
     collection: Collection,
     query: str,
@@ -70,6 +89,7 @@ def search_documents(
         return []
 
 
+@log_step
 def get_agent_response(text: str, prompt: str, client: OpenAI) -> dict:
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -98,12 +118,13 @@ def main():
     client = OpenAI()
     collection = load_collection()
 
-    prompt_chroma, prompt_rag = load_prompts()
+    prompt_chroma, prompt_rag = load_prompts_with_cache()
     search = st.text_input("Faça uma consulta:")
 
     if st.button("🔍 Buscar", type="tertiary") and search.strip():
         with st.spinner("Montando consulta..."):
             chroma_query = get_agent_response(search, prompt_chroma, client)
+            print(chroma_query)
         with st.spinner("Recuperando dados..."):
             results = search_documents(collection, **chroma_query)
             final_query = f"""
@@ -117,33 +138,33 @@ def main():
             "answer", "Não foi possível encontrar uma resposta."
         )
         ids = response.get("ids", [])
-
-        df = pd.DataFrame(results)
-        df = df[df["id"].isin(ids)][
-            [
-                "AN_BASE",
-                "NM_PRODUCAO",
-                "DS_RESUMO",
-                "NM_AREA_CONHECIMENTO",
-                "NM_GRANDE_AREA_CONHECIMENTO",
-                "NM_GRAU_ACADEMICO",
-                "SG_ENTIDADE_ENSINO",
-                "SG_UF_IES",
-            ]
-        ]
-
-        df = df.rename(
-            columns={
-                "AN_BASE": "Ano",
-                "NM_PRODUCAO": "Título",
-                "DS_RESUMO": "Resumo",
-                "NM_AREA_CONHECIMENTO": "Área de Conhecimento",
-                "NM_GRANDE_AREA_CONHECIMENTO": "Grande Área de Conhecimento",
-                "NM_GRAU_ACADEMICO": "Grau Acadêmico",
-                "SG_ENTIDADE_ENSINO": "Sigla da Instituição",
-                "SG_UF_IES": "Sigla do Estado da Instituição",
-            }
-        )
-
         st.write(answer)
-        st.write(df)
+        if ids:
+            df = pd.DataFrame(results)
+            df = df[df["id"].isin(ids)][
+                [
+                    "AN_BASE",
+                    "NM_PRODUCAO",
+                    "DS_RESUMO",
+                    "NM_AREA_CONHECIMENTO",
+                    "NM_GRANDE_AREA_CONHECIMENTO",
+                    "NM_GRAU_ACADEMICO",
+                    "SG_ENTIDADE_ENSINO",
+                    "SG_UF_IES",
+                ]
+            ]
+
+            df = df.rename(
+                columns={
+                    "AN_BASE": "Ano",
+                    "NM_PRODUCAO": "Título",
+                    "DS_RESUMO": "Resumo",
+                    "NM_AREA_CONHECIMENTO": "Área de Conhecimento",
+                    "NM_GRANDE_AREA_CONHECIMENTO": "Grande Área de Conhecimento",  # noqa
+                    "NM_GRAU_ACADEMICO": "Grau Acadêmico",
+                    "SG_ENTIDADE_ENSINO": "Sigla da Instituição",
+                    "SG_UF_IES": "Sigla do Estado da Instituição",
+                }
+            )
+
+            st.write(df)

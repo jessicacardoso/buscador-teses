@@ -47,7 +47,7 @@ class ThesisEmbeddingInstructorFunction(EmbeddingFunction):
     """
 
     def __init__(self) -> None:
-        self.model = INSTRUCTOR("models/instructor")
+        self.model = INSTRUCTOR("models/instructor", device=settings.DEVICE)
 
     def __call__(self, documents: Documents) -> Embeddings:
         """Recebe uma lista de documentos e retorna os embeddings.
