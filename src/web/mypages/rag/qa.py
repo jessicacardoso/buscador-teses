@@ -96,7 +96,9 @@ def get_agent_response(text: str, prompt: str, client: OpenAI) -> dict:
         ],
         response_format={"type": "json_object"},
     )
-    return json.loads(completion.choices[0].message.content)
+    return json.loads(
+        completion.choices[0].message.content.strip("```json").strip("```")
+    )
 
 
 def main():
