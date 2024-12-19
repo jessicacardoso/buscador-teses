@@ -16,9 +16,9 @@ def mock_settings():
 
 
 @pytest.fixture
-def mock_sentence_transformer():
+def mock_instructor():
     with patch(
-        "src.extract_embeddings.SentenceTransformer"
+        "src.extract_embeddings.INSTRUCTOR"
     ) as mock_sentence_transformer:
         yield mock_sentence_transformer
 

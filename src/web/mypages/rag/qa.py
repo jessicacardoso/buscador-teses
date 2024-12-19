@@ -55,11 +55,8 @@ def load_collection():
         auth_credentials=(
             settings.CHROMA_CLIENT_AUTH_CREDENTIALS.get_secret_value()
         ),
-        chromadb_name="instructor",
     )
-    collection = create_thesis_collection.fn(
-        client, chromadb_name="instructor"
-    )
+    collection = create_thesis_collection.fn(client)
     return collection
 
 

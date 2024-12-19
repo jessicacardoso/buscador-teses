@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     CHROMA_CLIENT_PORT: int
     CHROMA_CLIENT_AUTH_PROVIDER: str
 
-    MODEL_NAME_OR_PATH: str = "all-MiniLM-L6-v2"
+    MODEL_NAME_OR_PATH: str = "models/instructor"
     DEVICE: str | None = None
 
     model_config = SettingsConfigDict(

@@ -11,21 +11,27 @@ from src.extract_embeddings import (
 )
 
 
-def test_embedding_function(mock_sentence_transformer, mock_settings):
+def test_embedding_function(mock_instructor, mock_settings):
     mock_settings.MODEL_NAME_OR_PATH = "test_model"
     mock_settings.DEVICE = "cpu"
     mock_model = MagicMock()
     mock_model.encode.return_value = [1, 2, 3]
-    mock_sentence_transformer.return_value = mock_model
+    mock_instructor.return_value = mock_model
 
     embedding_function = ThesisEmbeddingFunction()
     documents = ["exemplo de resumo de tese"]
     embedding_function(documents)
 
-    mock_sentence_transformer.assert_called_once_with(
-        "test_model", device="cpu"
+    mock_instructor.assert_called_once_with("test_model", device="cpu")
+    mock_model.encode.assert_called_once_with(
+        [
+            [
+                "Represente a pergunta para recuperar o resumo;",
+                doc,
+            ]
+            for doc in documents
+        ]
     )
-    mock_model.encode.assert_called_once_with(documents)
 
 
 def test_create_chroma_client(mock_chroma_http_client, mock_chroma_settings):
