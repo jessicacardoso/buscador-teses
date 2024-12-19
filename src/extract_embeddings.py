@@ -8,7 +8,7 @@ from prefect import flow, task
 from prefect.cache_policies import INPUTS
 from tqdm.auto import tqdm
 
-from instructor_embedding import INSTRUCTOR
+from instructor_embedding.InstructorEmbedding import INSTRUCTOR
 from src.config import settings
 
 
