@@ -1,5 +1,21 @@
+from loguru import logger
 from pydantic import SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+logger.add(
+    "logs/info.log",
+    level="INFO",
+    rotation="10 MB",
+    compression="zip",
+    retention="10 days",
+)
+logger.add(
+    "logs/error.log",
+    level="ERROR",
+    rotation="10 MB",
+    compression="zip",
+    retention="10 days",
+)
 
 
 class Settings(BaseSettings):

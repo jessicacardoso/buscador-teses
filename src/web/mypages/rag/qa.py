@@ -7,7 +7,7 @@ import streamlit as st
 from chromadb.api.models.Collection import Collection
 from openai import OpenAI
 
-from src.config import settings
+from src.config import logger, settings
 from src.extract_embeddings import (
     create_chroma_client,
     create_thesis_collection,
@@ -20,7 +20,7 @@ def log_step(func):
         tic = dt.datetime.now()
         result = func(*args, **kwargs)
         time_taken = str(dt.datetime.now() - tic)
-        print(f"just ran step {func.__name__} took {time_taken}s")
+        logger.info(f"just ran step {func.__name__} took {time_taken}s")
         return result
 
     return wrapper
@@ -57,6 +57,7 @@ def load_collection():
         ),
     )
     collection = create_thesis_collection.fn(client)
+    logger.info("Collection loaded")
     return collection
 
 
@@ -76,18 +77,24 @@ def search_documents(
         n_results (int, optional): Número de resultados. Defaults to 20.
     """
     try:
+        logger.info(
+            f"Searching documents with query: {query} and where: {where}"
+        )
         results = collection.query(
             query_texts=[query],
             where=where,
             n_results=n_results,
         )
         return [item for items in results["metadatas"] for item in items]
-    except ValueError:
+    except Exception as e:
+        logger.error(f"Error searching documents: {e}")
         return []
 
 
 @log_step
 def get_agent_response(text: str, prompt: str, client: OpenAI) -> dict:
+    logger.info(f"Sending text to OpenAI: {text}")
+    logger.info(f"Prompt: {prompt}")
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
@@ -96,9 +103,9 @@ def get_agent_response(text: str, prompt: str, client: OpenAI) -> dict:
         ],
         response_format={"type": "json_object"},
     )
-    return json.loads(
-        completion.choices[0].message.content.strip("```json").strip("```")
-    )
+    answer = completion.choices[0].message.content
+    logger.info(f"Received response from OpenAI: {answer}")
+    return json.loads(answer.strip("```json").strip("```"))
 
 
 def main():
@@ -123,7 +130,6 @@ def main():
     if st.button("🔍 Buscar", type="tertiary") and search.strip():
         with st.spinner("Montando consulta..."):
             chroma_query = get_agent_response(search, prompt_chroma, client)
-            print(chroma_query)
         with st.spinner("Recuperando dados..."):
             results = search_documents(collection, **chroma_query)
             final_query = f"""
